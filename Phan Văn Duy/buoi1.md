@@ -1,0 +1,311 @@
+# Buổi 1: HTML
+
+
+# 1. Cách thức hoạt động của một trang web
+![web](https://hocban.vn/wp-content/uploads/2016/09/website-hoat-dong-nhu-the-nao.jpg)
+1. Đầu tiên người dùng nhập vào trình duyệt một địa chỉ có dạng: https://tmarketing.vn , bạn có chỉ cần gõ “tmarketing.vn” là trình duyệt sẽ tự hiểu và đổi thành đường dẫn ở trên.
+2. Sau đó trình duyệt gửi yêu cầu đến máy chủ DNS (domain name system).
+3. Hệ thống DNS sẽ trả kết quả phân tích tên miền trong đường dẫn đã gửi là tmarketing.vn, nó có địa chỉ máy chủ là 210.211.113.135
+4. Sau khi nhận được địa chỉ IP – nơi lấy dữ liệu, trình duyệt sẽ tìm đến địa chỉ IP đã nhận – tức máy chủ chứa nội dung website.
+5. Máy chủ web nhận được yêu cầu truy xuất nội dung website và nó gửi một tập hợp các file bao gồm HTML, CSS , các tập tin đa phương tiện khác như âm thanh, hình ảnh (nếu có) cho trình duyệt;
+6. Trình duyệt “dịch” các file mà máy chủ đã gửi thành trang web mà chúng ta nhìn thấy trên màn hình.
+
+
+# 2. Các thuật ngữ lĩnh vực
+## 2.1 Domain 
+Là địa chỉ website, tên miền là tên thay thế cho địa chỉ IP của máy chủ web, bởi địa chỉ IP là một dãy số rất khó nhớ. Do đó người ta gán (định danh) địa chỉ IP thành một chuỗi ký tự và nó dễ nhớ hơn
+ (ví dụ: thay vì ghi nhớ địa chỉ 210.211.113.135 ta sẽ nhớ chuỗi “tmarketing.vn”).
+## 2.2 Server
+là một máy tính có phần mềm và phần cứng, được kết nối với mạng máy tính hoặc Internet, có năng lực xử lý cao và IP tĩnh. Máy chủ sẽ được cài đặt các phần mềm nhằm phục vụ cho các máy tính khác truy cập để đáp ứng các yêu cầu cung cấp các dịch vụ và tài nguyên.
+- Máy chủ chính là nền tảng của tất cả dịch vụ trên Internet, bao gồm: Website, ứng dụng, trò chơi,… muốn đảm bảo vận hành thì đều phải thông qua một máy chủ.
+## 2.3 Web hosting
+Là nơi lưu trữ mã nguồn và nội dung website. Web hosting được xác định bởi địa chỉ IP.
+Các loại hosting phổ biến hiện nay: Shared Hosting (Lưu trữ chia sẻ), Dedicated Server Hosting (Lưu trữ máy chủ vật lý), VPS Hosting – Virtual Private Server Hosting (Lưu trữ máy chủ ảo riêng)
+## 2.4 IP
+Địa chỉ IP tiêu chuẩn được định dạng với 4 nhóm chữ số khác nhau. Chúng được giới hạn từ 0 – 255 ngăn cách bởi dấu chấm.
+IP sẽ giúp các thiết bị trên mạng Internet có thể phân biệt, chia sẻ và giao tiếp với nhau. Nó sẽ cung cấp danh tính cho các thiết bị khi chúng kết nối mạng tương tự như địa chỉ doanh nghiệp có vị trí cụ thể.
+## 2.5 Dữ liệu website
+Dữ liệu website: gọi chung cho tất cả các tập tin đa phương tiện như văn bản, âm thanh, hình ảnh, video,.. được lưu trữ trên máy chủ web.
+## 2.6 Mã nguồn website
+là một phần mềm hoàn chỉnh nó được cài đặt lên web server/hosting của bạn, nó như công cụ để tạo lập và quản lý các nội dung trên website.
+
+
+## 2.7 Website tĩnh
+là website mà người quản trị (những người không phải là lập trình viên) không thể tùy ý thay đổi nội dung và hình ảnh mà phải cần kiến thức về lập trình, thường các website này rất ít tương tác của người dùng nên vế sau dạng này ít được sử dụng.
+## 2.8 Website Động
+Website động là website được viết kèm theo một bộ công cụ quản trị để tùy biến nội dung dành cho webmaster (người quản trị) có thể dễ dàng thay đổi nội dung, hình ảnh. Website động được thiết kế bởi các lập trình viên để làm sao cho phép website có thể thay đổi được nội dung thường xuyên.
+# 3. HTML
+## 3.1 Khái niệm
+là viết tắt của cụm từ Hypertext Markup Language (tạm dịch là Ngôn ngữ đánh dấu siêu văn bản). HTML được sử dụng để tạo và cấu trúc các thành phần trong trang web hoặc ứng dụng, phân chia các đoạn văn, heading, titles, blockquotes… và HTML không phải là ngôn ngữ lập trình.
+## 3.2 Cấu trúc
+
+\<!DOCTYPE html>
+\<html>
+
+********\</head>         
+
+*****************\<title> Tiêu đề trang web \</title>
+
+********\</head>
+
+********\<body>
+...........................Phần thân........
+..................\<p> đoạn \</p>
+********\</body>
+
+\</html>
+
+## 3.3 Các thẻ
+### 3.3.1 Basic
+\<!DOCTYPE>
+Xác định cho trình duyệt biết phiên bản HTML mà bạn đang sử dụng
+
+\<html>
+Xác định một tài liệu HTML
+
+\<head>
+Xác định phần đầu của tài liệu HTML
+(chứa các thẻ cung cấp thông tin cho trang web)
+
+\<title>
+Xác định tiêu đề của trang web
+
+\<body>
+Xác định phần thân của tài liệu HTML
+(chứa những phần tử sẽ được hiển thị lên màn hình trình duyệt)
+
+\<h1> - \<h6> 
+Tạo những đề mục quan trọng trong trang web
+
+\<p>
+Xác định một đoạn văn bản
+
+\<br>
+Chèn một ngắt xuống dòng
+
+\<hr>
+Tạo một đường kẻ phân cách nằm ngang
+
+\<!-- -->
+Xác định một đoạn chú thích
+
+\<meta>
+được sử dụng để cung cấp các thông tin thêm. Thẻ này là một phần tử trống và không có thẻ đóng nhưng nó lại mang thông tin trong thuộc tính của nó (name, content...) . Các thông tin của thẻ meta không hiển thị trên trình duyệt nhưng các bộ máy khác có thể sử dụng chúng
+
+\<div>
+Nhóm các phần tử lại với nhau để tiện cho việc định dạng cũng như thiết kế bố cục của trang web
+
+\<span>
+Nhóm các phần tử nội tuyến lại với nhau để tiện cho việc định dạng CSS
+
+### 3.3.2 Formatting
+
+\<abbr>
+Định nghĩa một từ viết tắt
+
+\<address>
+Xác định thông tin liên hệ của tác giả (hoặc chủ sở hữu) trang web
+
+\<b>
+Xác định đoạn văn bản được in đậm
+
+\<bdo>
+Điều hướng một đoạn văn bản được chỉ định
+
+\<big>
+Xác định một đoạn văn bản có kích thước chữ to hơn văn bản bình thường
+
+\<blockquote>
+Xác định một "đoạn trích dẫn" từ một website khác
+
+\<code>
+Xác định một đoạn văn bản mang ý nghĩa là các mã lệnh
+
+\<del>
+Tạo một đường kẻ ngang lên văn bản
+
+\<em>
+Xác định một đoạn văn bản được định dạng kiểu chữ in nghiêng
+
+\<i>
+Xác định một đoạn văn bản được định dạng kiểu chữ in nghiêng
+
+\<ins>
+Tạo một đường gạch chân lên văn bản
+
+\<kbd>
+Xác định một từ (hoặc cụm từ) mang ý nghĩa là một phím hoặc tổ hợp phím
+
+\<mark>
+Đánh dấu màu nền nổi bật cho văn bản
+
+\<meter>
+Tạo phần tử có ý nghĩa giống như: thước đo, ổ đĩa, ....
+
+\<pre>
+Giúp cho nội dung mà bạn muốn hiển thị lên màn hình được giữ nguyên định dạng giống như trong lúc soạn thảo
+
+\<progress>
+Tạo một thanh tiến trình
+
+\<q>
+Xác định một câu trích dẫn ngắn
+
+\<s>
+Tạo một đường kẻ ngang lên văn bản
+
+\<small>
+Xác định một đoạn văn bản có kích thước chữ nhỏ hơn văn bản bình thường
+
+\<strong>
+Xác định đoạn văn bản được in đậm
+
+\<sub>
+Tạo văn bản có kích thước nhỏ, nằm ở khoảng nửa dưới văn bản bình thường
+
+\<sup>
+Tạo văn bản có kích thước nhỏ, nằm ở khoảng nửa trên văn bản bình thường
+
+\<time>
+Đánh dấu những phần văn bản là: thời gian, ngày tháng, ngày lễ, ....
+
+\<u>
+Tạo một đường gạch chân lên văn bản
+
+\<wbr>
+Ngắt bớt ký tự của một từ xuống dòng.
+(trong trường hợp chiều rộng của phần tử không đủ để chứa hết từ đó)
+
+### 3.3.3 Frames
+
+\<frame>
+Xác định một khung trong một bộ khung
+
+\<frameset>
+Xác định một bộ khung
+\<noframes>
+Xác định một nội dung sẽ được hiển thị khi trình duyệt không hỗ trợ thẻ <frame>
+\<iframe>
+Nhúng một trang web khác vào trang web hiện tại
+
+### 3.3.4 Images
+\<img>
+Chèn hình ảnh vào trang web
+\<map> và \<area>
+Tạo một bản đồ ảnh
+\<figcaption>
+Tạo một tiêu đề cho nội dung được đặt bên trong phần tử \<figure>
+\<figure>
+Xác định một nội dung cần được tách biệt rõ ràng
+
+### 3.3.5 Audio / Video
+
+\<audio>
+Tạo một "trình phát nhạc" cho trang web
+\<source>
+Chỉ định tài nguyên cho trình nghe nhạc hoặc trình xem phim
+\<track>
+Chèn một bản phụ đề vào video
+\<video>
+Tạo một "trình xem phim" cho trang web
+
+### 3.3.6 Links
+
+\<a>
+Tạo một liên kết đến một tài liệu nào đó
+(khi người dùng bấm vào liên kết thì sẽ được chuyển đến tài liệu đó)
+\<nav>
+Xác định một tập hợp các liên kết & thường được sử dụng kết hợp với CSS để tạo một thanh menu
+
+### 3.3.7 Lists
+
+\<ul>
+Xác định một danh sách không có thứ tự
+\<ol>
+Xác định một danh sách có thứ tự
+\<li>
+Xác định một "danh mục" trong danh sách
+
+### 3.3.8 Tables
+
+\<table>
+Xác định phần tử là một cái bảng
+\<caption>
+Tạo tiêu đề cho bảng
+\<th>
+Xác định phần tử là một ô tiêu đề trong hàng
+\<tr>
+Xác định phần tử là một hàng trong bảng
+\<td>
+Xác định phần tử là một ô trong hàng
+\<thead>
+Xác định những dòng nào thuộc "phần đầu" của bảng
+\<tbody>
+Xác định những dòng nào thuộc "phần thân" của bảng
+\<tfoot>
+Xác định những dòng nào thuộc "phần chân" của bảng
+
+### 3.3.9 Styles and Semantics
+
+\<style>
+Dùng để làm thùng chứa cho các đoạn mã CSS
+\<div>
+Nhóm các phần tử lại với nhau để tiện cho việc định dạng cũng như thiết kế bố cục của trang web
+\<span>
+Nhóm các phần tử nội tuyến lại với nhau để tiện cho việc định dạng CSS
+\<header>
+Xác định phần đầu của trang web
+\<footer>
+Xác định phần chân của trang web
+\<main>
+Xác định phần thân của trang web
+\<dialog>
+Tạo một hộp thoại
+\<summary>
+\<details>
+Tạo phần tử có dạng:
+"chỉ hiển thị tiêu đề còn chi tiết bị ẩn, khi bấm vào tiêu đề thì chi tiết mới hiển thị"
+
+### 3.3.10 Meta Infor
+
+\<base>
+Xác định "đường dẫn cơ sở" trong trang web và kiểu mở liên kết mặc định
+
+### 3.3.11 Programming
+
+\<script>
+Dùng để làm thùng chứa cho các câu lệnh JavaScript
+\<noscript>
+Xác định một nội dung HTML sẽ được hiển thị khi trình duyệt không hỗ trợ JavaScript hoặc đã tắt JavaScript
+\<embed>
+Dùng để nhúng một "tài liệu" nào đó vào trang web
+\<object>
+Dùng để nhúng một "tài liệu" nào đó vào trang web
+
+## 3.4 Attribute
+- Trong thẻ \<h1 class=”text-success”>Khóa học HTML cơ bản</h1>, chuỗi class=”text-success” là thuộc tính của thẻ HTML, nó cung cấp thông tin thêm cho thẻ HTML.
+- Ở đây có thể có nhiều các thẻ h1 và chúng ta phân biệt các thẻ này bằng thuộc tính class, tức là các thẻ h1 có thuộc tính class là text-success sẽ được nhóm chung vào một nhóm để có thể tô màu, tăng giảm kích thước chữ, chọn font chữ sau này.
+- Thuộc tính của một thẻ HTML có những tính chất như sau:
+1. Tất cả các thẻ HTML đều có có thể các thuộc tính.
+ 2. Các thuộc tính cung cấp thêm các thông tin cho thẻ HTML.
+3. Các thuộc tính luôn được đưa vào thẻ mở trong thẻ HTML.
+4. Thuộc tính luôn đi theo cặp tên thuộc tính/giá trị thuộc tính
+- ví dụ class=”text-success”.
+## 3.5 Block
+là loại phần tử mà khi hiển thị lên màn hình thì nó sẽ có các đặc điểm như sau: 
+- Luôn luôn được bắt đầu trên một hàng mới
+- Chiều rộng của phần tử sẽ chiếm toàn bộ chiều rộng phần nội dung của phần tử cha của nó.
+
+## 3.5 Inline
+Phần tử nội tuyến là loại phần tử mà khi hiển thị lên màn hình thì nó sẽ có các đặc điểm như sau: 	
+- Phần tử hiển thị tiếp nối trên hàng hiện tại nếu anh của nó không phải là một phần tử khối
+- Chiều rộng của phần tử phụ thuộc vào kích cỡ của nội dung nằm ở bên trong nó.
+
+
+
+
+
+
+
+
+
