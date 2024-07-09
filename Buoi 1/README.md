@@ -18,7 +18,7 @@
 
 \- **Trang web hoạt động như thế nào ?**
 
-![Cách thức hoạt động của trang web](img\website-hoat-dong-nhu-the-nao.jpg)
+![Cách thức hoạt động của trang web](img/website-hoat-dong-nhu-the-nao.jpg)
 
 1. Người dùng truy cập vào trình duyệt web (`browser`)
 2. Người dùng truy cập vào địa chỉ website `https://www.facebook.com` 
@@ -78,7 +78,7 @@
 - **http-equiv**: cung cấp tiêu đề http cho thông tin/giá trị của thuộc tính content
 - **content**: chỉ định giá trị liên kết với http-equiv hoặc name
 
-![Alt text](img\1.png)
+![Alt text](img/1.png)
 
 ```html
 <!-- Thẻ meta dùng để xác định từ khóa  -->
@@ -110,7 +110,7 @@
 <h6>Heading 6</h6>
 ```
 
-![Alt text](img\heading.png)
+![Alt text](img/heading.png)
 
 #### Thẻ p
 \- Viết tắt của paragraph, dùng để định nghĩa một đoạn văn, trình duyệt sẽ tự động thêm 1 dòng trống trước và sau mỗi phần tử `<p>`. Có thể sử dụng CSS để tạo kiểu cho đoạn văn.
