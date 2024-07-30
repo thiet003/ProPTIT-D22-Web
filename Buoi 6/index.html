@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+        .gridContainer {
+            display: grid;
+            width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 200px 300px 100px;
+            grid-template-areas: 
+            "header header header"
+            "sidebar content content"
+            "sidebar content content"
+            "footer footer footer";
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .item-1{
+            grid-area: header;
+        }
+
+        .item-2 {
+            grid-area: sidebar;
+        
+        }
+
+        .item-3{
+            grid-area: content;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 5px;
+            row-gap: 5px;
+        }
+
+        .item-4{
+            grid-area: footer;
+        }
+
+        .item{
+            background-color: skyblue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .article{
+            border: 5px solid white;
+        }
+
+        @media only screen and (max-width: 900px) {
+            .item-3{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+        }
+
+        @media only screen and (max-width: 600px) {
+            .item-3{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="gridContainer">
+        <div class="item-1 item">HEADER</div>
+        <div class="item-2 item">SIDEBAR</div>
+        <div class="item-3 item">
+            <div class="article">Article 1</div>
+            <div class="article">Article 2</div>
+            <div class="article">Article 3</div>
+            <div class="article">Article 4</div>
+            <div class="article">Article 5</div>
+            <div class="article">Article 6</div>
+        </div>
+        <div class="item-4 item">FOOTER</div>
+    </div>
+</body>
+</html>
