@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        a{
+            color: black
+        }
+        a:link {
+            color: blue;
+        }
+        a:visited {
+            color: violet;
+        }
+        a:hover {
+            color: green;
+        }
+
+        a:focus {
+            color: yellow;
+        }
+
+        .a_2::before{
+            content: url(image.png);
+        }
+        .a_2::after{
+            content: url(image2.png);
+        }
+
+        p::first-letter{
+            font-size: 30px;
+        }
+        p::first-line{
+            color:red;
+        }
+        p::selection{
+            background-color: green;
+        }
+
+
+        .a_3[title="link"]{
+            color: blue;
+        }
+
+        .a_3[title~="link"]{
+            color: green;
+        }
+    </style>
+    <h1>1. PseudoClass-Selector</h1>
+    <a href="#">This is a Link</a>
+
+    <h1>2. Pseudo-Element Selector</h1>
+    <a href="#" class="a_2">This is a Link</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <br> Explicabo ratione porro deleniti dolorem eaque velit reprehenderit 
+        <br>minima provident optio eius, rem, veniam odio accusantium maxime! 
+        <br>Illum soluta aspernatur labore magnam.</p>
+
+    <h1>3. Attribute-Selector</h1>
+    <a href="#" class="a_3" title="li">Link1</a>
+    <a href="#" class="a_3" title="link">Link2</a>
+    <a href="#" class="a_3" title="notlink link">Link3</a>
+    <a href="#" class="a_3" title="notlink">Link4</a>
+
+    <a href="#" class="a_3" title="li" style=":focus{color: blue;}">Link1</a>
+</body>
+</html>

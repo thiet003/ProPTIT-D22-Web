@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .heading_hw_text{
+            color: green;
+            text-align: center;
+            border: 3px black solid;
+
+        }
+        .heading_hw{
+            border: 3px black solid;
+            background: gray;
+            width: 200px;
+            display:inline;
+        }
+
+        .heading_hw_displaytest{
+            /* position: relative; */
+            position: absolute;
+            left: 100px;
+        }
+        .tmp{
+            display: none;
+        }
+        .box_demo{
+            height: 2000px;
+            background-color: gray;
+        }
+        .box_fixed_Mini{
+            background-color: green;
+            border: 2px solid black;
+            font-size: 30px;
+            width: 50px;
+            height: 50px;
+
+            position: fixed;
+            top: 20px;
+            left: 520px;
+
+            z-index: 0;
+        }
+        .box_fixed_Mini2{
+            background-color: blue;
+            border: 2px solid black;
+            font-size: 30px;
+            width: 80px;
+            height: 80px;
+
+            position: fixed;
+            top: 20px;
+            left: 520px;
+
+            z-index: 0;
+        }
+        .box_fixed{
+            background-color: orange;
+            border: 2px solid black;
+            font-size: 30px;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            top: 20px;
+            left: 520px;
+
+            z-index: 1;
+        }
+        .box_sticky{
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+        }
+        .bh1{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+            border: 3px black solid;
+            background-color: #4CAF50;
+        }
+        .bh2{
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            border: 3px black solid;
+            background-color: orange;
+        }
+    </style>    
+    
+    <h1 class="heading_hw_text heading_hw tmp">Hello World 1</h1>
+    <h1 class="heading_hw_text heading_hw">Hello World 2</h1>
+
+    <div>
+        <div class="box_sticky">BOX-Sticky</div>
+    </div>
+    
+    <div class="box_demo">
+        <h1 class="heading_hw_text heading_hw heading_hw_displaytest">Hello World</h1>
+    </div>
+
+
+    <div class="box_fixed">
+        <div class="box_fixed_Mini">BOX-Fixed</div>
+        <div class="box_fixed_Mini2">BOX-Fixed</div>
+    </div>
+
+
+    <!-- Buoi học -->
+    <div class="bh1">bõb1</div>
+    <div class="bh2">bõb2</div>
+
+    <p style="text-align: justify; width: 100%; background-color: #4CAF50;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Laborum aut illum tempore, magni hic, officiis commodi, ab animi nobis explicabo sint iusto error harum natus iste<br> reprehenderit quis vel blanditiis?</p>
+
+
+
+
+    box
+    <div class="box8">
+        <div class="box9"></div>
+    </div>
+</body>
+</html>

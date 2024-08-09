@@ -1,0 +1,1 @@
+1. Nên set kích cỡ các contanier ở cố định px, vì nếu ko, thì những cái tk con như img để px khi responsive sẽ bị phòi ra ngoài.

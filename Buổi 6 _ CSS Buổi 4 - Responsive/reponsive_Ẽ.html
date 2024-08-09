@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+
+        .section_1{
+            width: 100%;
+            height: 300px;
+            background-color: green;
+            border: 3px black solid;
+        }
+
+        .section_2{
+            width: 100%;
+            border: 1px black solid;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .item{
+            width: calc(33.3% - 15px);
+            border: 3px black solid;
+
+            margin-right: 7.5px;
+
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .image{
+            background-color: green;
+            width: 100%;
+            height: 200px;
+        }
+
+        .text{
+            width: 100%;
+        }
+
+        @media screen and (max-width: 900px) {
+            .item{
+                width: 100%;
+                height: 150px;
+            }
+            .image{
+                width: 30%;
+                margin-right: 15px;
+                height: 100%;
+                margin-bottom: 15px;
+            }
+            .text{
+                width: calc(70% - 15px);
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .item{
+                width: 100%;
+                height: 300px;
+            }
+            .image{
+                width: 100%;
+                margin-bottom: 15px;
+                height: 150px;
+            }
+            .text{
+                width: 100%;
+            }
+        }
+    </style>
+
+    <div class="section_1">
+
+    </div>
+    <div class="section_2">
+        <div class="item">
+            <div class="image"></div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate earum sequi facere tempore totam sint minus quis architecto minima veniam cumque quas, magni quaerat recusandae, blanditiis perspiciatis quo temporibus laborum!</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image"></div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate earum sequi facere tempore totam sint minus quis architecto minima veniam cumque quas, magni quaerat recusandae, blanditiis perspiciatis quo temporibus laborum!</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image"></div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate earum sequi facere tempore totam sint minus quis architecto minima veniam cumque quas, magni quaerat recusandae, blanditiis perspiciatis quo temporibus laborum!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

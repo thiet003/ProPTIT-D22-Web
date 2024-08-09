@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        div h1{
+            color: red;
+        }
+        .box1 h1{
+            color: green;
+        }
+        .box1 .head1{
+            background-color: gray;
+        }
+
+        .box2 > h1{
+            color: orange;
+        }
+
+        .box3 + p{
+            color: yellow;
+        }
+
+        div ~ p{
+            color:blue;
+        } 
+    </style>
+
+    <h1>1. Hậu duệ</h1>
+    <div class="box1">
+        <h1>Hello World</h1>
+        <div>
+            <h1>Hello World2</h1>
+        </div>
+    </div>
+    
+    <div>
+        <h1>Hello World</h1>
+    </div>
+
+    <div class="box1" >
+        <h1 class="head1">Hello World</h1>
+    </div>
+
+    <h1>2. Con</h1>
+    <div class="box2">
+        <h1>Hello World</h1>
+        <div>
+            <h1>Hello World2</h1>
+        </div>
+    </div>
+
+    <h1>3. Chị em liền kề</h1>
+    <div class="box3">
+        <h1>Hello World</h1>
+    </div>
+    <p>Hi World1</p>
+    <p>Hi World2</p>
+    <div class="box3">
+    </div>
+    <p>Hi World2</p>
+    <p>Hi World1</p>
+
+
+    <h1>3. Chị em chung</h1>
+    <p>Paragraph 1.</p>
+    <div>
+    <p>Paragraph 2.</p>
+    </div>
+
+    <p>Paragraph 3.</p>
+    <code>Some code.</code>
+    <p>Paragraph 4.</p>
+</body>
+</html>

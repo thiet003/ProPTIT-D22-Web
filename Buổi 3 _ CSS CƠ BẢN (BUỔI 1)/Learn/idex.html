@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            position: relative;
+
+           
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+
+            top: 0px;
+            left: 0px;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+
+
+
+        .box4{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        .box5{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: fixed;
+
+            top: 0px;
+            left: 500px;
+        }
+
+
+        .box6{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        .box7{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: sticky;
+
+            top: 0px;
+            left: 500px;
+        }
+    </style>
+    
+    <!-- <h1>TMP</h1>
+    <div class="box2">BOX2
+        <div class="box3">BOX3</div>
+    </div>
+
+    <h1>TMP</h1>
+    <div class="box1">BOX1
+        <div class="box3">BOX3</div>
+    </div>
+
+    <h1>TMP</h1>
+    <div class="box4">BOX4
+        <div class="box5">BOX5</div>
+    </div>
+
+    <h1>TMP</h1>
+    <div class="box6">BOX6
+        <div class="box7">BOX7</div>
+    </div> -->
+
+    <div class="box10" style="width: 100px; height: 100px; position: absolute; z-index: 50; background-color: red;"></div>
+    <div class="box8" style="width: 100px; height: 100px; position: absolute; z-index: 100; background-color: green;">
+        <div class="box9" style="width: 100px; height: 100px; position: relative; z-index: 10000; background-color: blue;"></div>
+    </div>
+</body>
+</html>

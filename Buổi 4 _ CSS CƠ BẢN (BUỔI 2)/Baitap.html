@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    
+    <style>
+        .color-red{
+            color:red;
+        }
+        #color-green{
+            color:green;
+        }
+
+        .div_yc2{
+            background-image: url("ai-images-freepik.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .div_yc3_1{
+            background-color: green;
+            border: 5px black solid;
+            height: 100px;
+
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .div_yc3_2{
+            background-color: red;
+            border: 8px white dotted;
+            height: 100px;
+
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <h1>Câu 1: Bài tập về selectors (bộ chọn)</h1>
+    <p><b>Yêu cầu:</b> Tạo 1 thư mục đặt tên là css, trong thư mục css tạo file style.css, sau đó trong file index.html hãy link thêm file style.css vào(dạng đường dẫn relative - tương đối). Tạo ra các đoạn văn như dưới đây:    </p>
+    
+    <p class="color-red">Tạo thẻ p như này và thêm class="color-red", sau đó viết thêm css để dòng chữ này thành màu đỏ(Dùng bộ chọn class - class selector).</p>
+    <p id="color-green">Tạo thẻ p như này và thêm id="color-green", sau đó viết thêm css vào dòng chữ này thành màu xanh lá(Dùng bộ chọn id - id selector).</p>
+
+
+    <h1>Câu 2: Bài tập về background</h1>
+    <p><b>Yêu cầu 1:</b> Tạo thẻ div, đặt tên class cho thẻ div này tuỳ ý, sau đó viết css theo tên class đã đặt. Chiều rộng 200px, chiều cao 100px. Có background màu xanh là như dưới đây: </p>
+    <div style="width: 200px; height: 100px; background-color: green;"></div>
+
+    <p><b>Yêu cầu 2:</b> Tạo 1 thẻ div, đặt tên cho thẻ div này tuỳ ý, sau đó viết css theo tên class đã đặt. Chiều rộng 100%, chiều cao 200px. Có background là hình ảnh. Khi scroll là hình ảnh đứng yên. Làm như dưới đây:</p>
+    <div class="div_yc2" style="height: 300px; width: 100%;"></div>
+
+    <h1>Câu 3: Bài tập về Box model</h1>
+    <p><b>Yêu cầu:</b> Tạo 2 thẻ div, đặt tên class cho thẻ div này tuỳ ý, sau đó viết css theo tên class đã đặt. Như dưới đây:</p>
+    <div class="div_yc3_1">
+        <div>Nội dung 1</div>
+    </div>
+
+    <div class="div_yc3_2">
+        <div style="box-sizing: content-box;">Nội dung 2</div>
+    </div>
+
+    <h1>Câu 4: Bài tập về Fonts</h1>
+    <p><b>Yeu cầu: </b>Viết lại dòng chữ dưới đây và sử dụng font Arial, dùng css để viết hoa tất cả các chữ cái, viết chữ in đậm, cỡ chữ 30px:</p>
+    
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 30px;"><b>DÒNG CHỮ NÀY ĐANG SỬ DỤNG FONT ARIAL, ĐÂY LÀ KIỂU FONT CHỮ SANS-SERIF(KHÔNG CHÂN).</b></p>
+
+    <h1>Câu 5: Bài tập về Icons</h1>
+    <p><b>Yêu cầu:</b> Nhúng bộ icon font-awesome vào web bằng link CDN, sau đó truy cập link https://fontawesome.com/search và lấy một số icon để chèn vào web(lấy dạng mã HTML), ví dụ như dưới đây(icon nào cũng được):    </p>
+    <div class="div_yc5">
+        <i class="fa-brands fa-facebook" style="color: blue; width: 40p;"></i>
+        <i class="fa-brands fa-twitter" style="color: blue;"></i>
+        <i class="fa-brands fa-instagram" style="color: blue;"></i>
+        <i class="fa-brands fa-youtube" style="color: blue;"></i>
+    </div>
+</body>
+</html>

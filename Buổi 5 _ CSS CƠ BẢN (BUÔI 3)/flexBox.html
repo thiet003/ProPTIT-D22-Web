@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container1{
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        .container2{
+            display: flex;
+        }
+        .container2_2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container2_3{
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+
+        .container3{
+            display: flex;
+            justify-content: center;
+        }
+        .container3_1{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .container3_2{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .container3_3{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container3_4{
+            display: flex;
+            justify-content: space-around;
+        }
+        .container3_5{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+        .container4{
+            display: flex;
+            align-items: center;
+        }
+        .container4_1{
+            display: flex;
+            align-items: flex-start;
+        }
+        .container4_2{
+            display: flex;
+            align-items: flex-end;
+        }
+        .container4_3{
+            display: flex;
+            align-items: stretch;
+        }
+    </style>
+
+    <h1>1. Flex-direction</h1>
+    <div class="container1" style="height: 100px; width: 100%; background-color: purple;">
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    </div>
+
+    <h1>2. Flex-wrap</h1>
+    <div class="container2" style="height: 100px; width: 100%; background-color: purple;">
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items4</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items5</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items6</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items7</div>
+    </div>
+    <p>....</p>
+    <div class="container2_2" style="height: 150px; width: 100%; background-color: purple;">
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items4</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items5</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items6</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items7</div>
+    </div>
+    <p>....</p>
+    <div class="container2_3" style="height: 150px; width: 100%; background-color: purple;">
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items4</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items5</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items6</div>
+        <div style="width: 200px; background-color: orange; border: 3px solid black; margin: 20px;">Items7</div>
+    </div>
+
+    <h1>3. justify-content</h1>
+    <div class="container3" style="height: 100px; width: 100%; background-color: purple;">
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    </div>
+    <p>....</p>
+    <div class="container3_1" style="height: 100px; width: 100%; background-color: purple;">
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    </div>
+    <p>....</p>
+    <div class="container3_2" style="height: 100px; width: 100%; background-color: purple;">
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    </div>
+    <p>space-between: 2 items đầu và cuối sát lề</p>
+    <div class="container3_3" style="height: 100px; width: 100%; background-color: purple;">
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    </div>
+    <p>space-around: như space-between: 2 items đầu và cuối sát lề, nhưng cách lề = 1/2 width của item</p>
+    <div class="container3_4" style="height: 100px; width: 100%; background-color: purple;">
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    </div>
+    <p>space evenly: kc giữa lề - item = kc giữa 2 item</p>
+    <div class="container3_5" style="height: 100px; width: 100%; background-color: purple;">
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    </div>
+
+
+
+    <h1>4. align-items</h1>
+    <div class="container4" style="height: 100px; width: 100%; background-color: purple;">
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    </div>
+    <p>....</p>
+    <div class="container4_1" style="height: 100px; width: 100%; background-color: purple;">
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    </div>
+    <p>....</p>
+    <div class="container4_2" style="height: 100px; width: 100%; background-color: purple;">
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    </div>
+    <p>Stretch</p>
+    <div class="container4_3" style="height: 100px; width: 100%; background-color: purple;">
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="height: 20px; background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    </div>
+
+
+    <h1>5. Order</h1>
+    <div class="container4_3" style="height: 100px; width: 100%; background-color: purple;">
+        <div style="order: 3; background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="order: 1; background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="order: 2; height: 20px; background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    </div>
+
+    <h1>6. Align-items vs Align-content</h1>
+    <h3>Align-items</h3>
+    <div class="container4_3" style="flex-wrap: wrap; align-items: flex-end; height: 1000px; width: 500px; background-color: purple;">
+        <div style="height: 80px; background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="height: 40px; background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="height: 20px; background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+        <div style="height: 80px; background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="height: 40px; background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="height: 20px; background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+        <div style="height: 80px; background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="height: 40px; background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="height: 20px; background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+        <div style="height: 80px; background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="height: 40px; background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="height: 20px; background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    </div>
+
+    <h3>Align-content</h3>
+    <div class="container4_3" style="flex-wrap: wrap; align-content: flex-end; height: 1000px; width: 500px; background-color: purple;">
+        <div style="height: 80px; background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="height: 40px; background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="height: 20px; background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+        <div style="height: 80px; background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="height: 40px; background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="height: 20px; background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+        <div style="height: 80px; background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="height: 40px; background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="height: 20px; background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+        <div style="height: 80px; background-color: orange; border: 3px solid black; margin: 20px;">Items1</div>
+        <div style="height: 40px; background-color: orange; border: 3px solid black; margin: 20px;">Items2</div>
+        <div style="height: 20px; background-color: orange; border: 3px solid black; margin: 20px;">Items3</div>
+    
+    </div>
+
+    
+
+</body>
+</html>

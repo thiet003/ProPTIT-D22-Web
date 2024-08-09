@@ -1,0 +1,29 @@
+.slider {
+    list-style: none;
+    overflow: hidden;
+    white-space: nowrap;
+ }
+ 
+ .slider li {
+    display: inline-block;
+    width: 100%;
+    animation: slide 10s infinite;
+ }
+ 
+ @keyframes slide {
+    0% {
+       transform: translateX(0%);
+    }
+    25% {
+       transform: translateX(-100%);
+    }
+    50% {
+       transform: translateX(-200%);
+    }
+    75% {
+       transform: translateX(-300%);
+    }
+    100% {
+       transform: translateX(0%);
+    }
+ }

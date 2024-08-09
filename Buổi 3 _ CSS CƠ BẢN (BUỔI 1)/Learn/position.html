@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box1, .box2{
+            background-color: orange;
+            border: 5px solid black;
+            font-size: 40px;
+            width: 150px;
+            height: 150px;
+        }
+
+
+        .box1_2, .box2_2{
+            background-color: orange;
+            border: 5px solid black;
+            font-size: 40px;
+            width: 150px;
+            height: 150px;
+        }
+        .box2_2{
+            position: relative;
+            top: 50px;
+            left: 100px;
+        }
+
+        .box_3_3{
+            background-color: green;
+            border: 2px solid black;
+            font-size: 30px;
+            width: 100px;
+            height: 100px;
+
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .box_3_4{
+            background-color: green;
+            border: 2px solid black;
+            font-size: 30px;
+            width: 100px;
+            height: 100px;
+
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+
+        .box_3_5{
+            background-color: green;
+            border: 2px solid black;
+            font-size: 30px;
+            width: 100px;
+            height: 100px;
+
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <h1>I: Static</h1>
+    <div class = "box1">
+        Box1
+    </div>
+    <div class = "box2">
+        Box2
+    </div>
+
+    <h1>II: Relative</h1>
+    <div class = "box1_2">
+        Box1
+    </div>
+    <div class = "box2_2">
+        Box2
+    </div>
+
+    <h1>III: Relative</h1>
+    <div class = "box2_2">
+        Box2
+        <div class="box_3_3">
+            Box3
+        </div>
+    </div>
+
+    <h1>IV: Fixed</h1>
+    <div class = "box2_2">
+        Box2
+        <div class="box_3_4">
+            Box3
+        </div>
+    </div>
+
+    <h1>V: Fixed</h1>
+    <div class = "box2_2">
+        Box2
+        <div class="box_3_5">
+            Box3
+        </div>
+    </div>
+    <h1>V: Fixed</h1>
+    <div class = "box2_2">
+        Box2
+        <div class="box_3_5">
+            Box3
+        </div>
+    </div>
+    
+</body>
+</html>

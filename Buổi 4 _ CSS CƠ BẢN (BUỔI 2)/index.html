@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            --color-one: rgb(129, 129, 181);
+            --color-two: rgb(128, 186, 128);
+        }
+        .head2_3{
+            background-color: var(--color-one);
+            color: var(--color-two);
+        }
+
+        p{
+            color:blue !important;
+        }
+        p{
+            color:green;
+        }
+
+        #div1 {
+            position: absolute;
+            left: 50px;
+            width: calc(100% - 100px);
+            border: 1px solid black;
+            background-color: yellow;
+            padding: 5px;
+        }
+    </style>
+
+    <h1>1. Important:</h1>
+    <p>hello</p>
+
+    <h1>2. CALC</h1>
+    <p>Create a div that stretches across the window, with a 50px gap between both sides of the div and the edges of the window:</p>
+
+    <div id="div1">Some text...</div>
+
+    <h1>3. Var</h1>
+    <h2 class="head2_3">Test Var</h2>
+</body>
+</html>
