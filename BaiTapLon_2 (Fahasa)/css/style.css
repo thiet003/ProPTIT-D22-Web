@@ -5,6 +5,7 @@
 }
 
 :root{
+    color--one: #E52323;
     
 }
 
@@ -14,7 +15,10 @@ header{
     justify-content: center;
 }
 
-
+.ss1_toolbar .container .inner-logo a img{
+    width:220px; 
+    vertical-align: middle;
+}  
 
 
 
@@ -33,6 +37,11 @@ header{
 .ss1_toolbar .container .inner-logo{
     margin-right: 40px;
 }   
+.ss1_toolbar .container .inner-logo a img{
+    width:220px; 
+    vertical-align: middle;
+}  
+
 .ss1_toolbar .list-product{
     display: flex;
     align-items: center;
@@ -193,7 +202,7 @@ header{
         padding-top: 0px;
     }  
     .ss1_toolbar .container .inner-logo a img{
-        width: 70px;
+        width: 120px;
         height: 30px;
         /*Sao cai nay ko chinhr dc kich co nhi*/
     }   
@@ -464,7 +473,10 @@ header{
     width: calc(20% - 10px);
     margin-left: 10px;
     padding: 5px;
+    border: white 3px solid;
+
 }
+
 .ss3_Trending .container .inner-listbook .container-listbook .book:hover{
     border: gray 3px solid;
 }
