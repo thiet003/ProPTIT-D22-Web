@@ -144,6 +144,41 @@
 #### e. Constructor: Kiểu kiểu constructor của Java
 - Là 1 hàm giúp ta khởi tạo 1 Object như ta muốn. Các Object tạo từ hàm này có cùng các thuộc tính.
   
+
+
+### 4. ARRAY:
+
+1. forEach():
+   1. ![alt text](image-14.png)
+   2. Đối số của forEach là 1 function, có 3 tham số: currentItem, id, array. Với id là vị trí của currentItem trong array
+   3. ![alt text](image-15.png)
+   4. Ko trả về j
+2. every:
+   1. ![alt text](image-16.png)
+   2. Kiểm tra `tất cả` các phần tử của 1 mảng mà nó phải thỏa mãn 1 điều kiện j đó.
+   3. Đối số của every là 1 function, có 3 tham số: currentItem, id, array. Với id là vị trí của currentItem trong array
+   4. Có trả về true-false.
+3. some:
+   1. ![alt text](image-17.png)
+   2. Kiểm tra `chỉ cần 1 `phần tử của 1 mảng thỏa mãn đk j đó:
+   3. Đối số của some là 1 function, có 3 tham số: currentItem, id, array. Với id là vị trí của currentItem trong array
+4. find:
+   1. ![alt text](image-18.png)
+   2. Tìm trong mảng có gt cần tìm ko. Có thì trả về phần tử đó, nếu ko cso thì trả về undefined. Chỉ tìm đc 1 phânnf tử đầu tiên nó tìm thấy
+5. fillter:
+   1. ![alt text](image-19.png)
+   2. Như find nhưng trả về nhiều.
+6. map():
+   1. ![alt text](image-20.png)
+   2. duyệt qua các phần tử như forEach. Nhưng sẽ trả về 1 mảng. Mà mảng đó thì do ta quyết và sử dụng return để trả ra.
+7. reduce()
+   1. ![alt text](image-21.png)
+   2. như map nhưng thay vì tra về mảng, nó trả về giá trị
+   3. Đối số: là 1 hàm có 3 tham số: 
+      1. total: Giá trị trả lại trc đó của reduce. VD: Nếu tính tổng 1 mảng thì giá trị ban đấu (innnitialValue = 0, nó gán cho total) Cứ mỗi lần cộng 1 phânf tử vào total, nó sẽ cập nhật ngay
+      2. innnitialValue: Ko bắt buộc, khỏi tạo 1 giá trị ban đầu, thế thôi. Nếu ko kbao thì mặc định nó ssd phần tử đầu
+
+
 ### 4.Date Object: Thời gian
 
 1. Đối tượng Date:
@@ -170,9 +205,73 @@
 
 ## III. Cấu trúc rẽ nhánh, toán tử 3 ngôi
 - Hầu hết đều giống như C++.
+1. Câu lệnh if
+   ```js
+      if(condition){
+         //code
+      }
+      else if(condition){
 
+      }
+      else{
+
+      }
+   ```
+   1. condition: true - false
+      1. false khi:
+         1. NULL, xâu Rỗng, 0
+      2. true khi
+         1. Số khác 0
+2. Toán tử 3 ngôi:
+- Ta có thể rút gọn câu lệnh if-else thành câu lệnh rẽ nhánh 
+
+3. Switch- case
+   ```js
+      switch (var){
+         case value_1:
+            //code
+         case value_1:
+            //code // Nếu ko có break thì nó sẽ chạy hết các case
+         case value_1:
+            //code
+            break // Nếu có break thì nó chỉ chạy hết case này
+         case value_1:
+            //code
+            break
+         default:
+            //code
+            break;
+      }
+   ```
 ## IV. Vòng lặp
+1. Vòng lặp for
+![alt text](image-6-1.png)
 
+2. Vòng lặp for-in:
+   1. Duyệt qua tất cả các KEY của 1 Object, String, Array
+   2. Cú pháp:
+         ```js
+            for(key in object){
+               // Code
+            }
+         ```
+   3. Trong đó:
+      1. key: là tên biến
+      2. objectL Object, vòng này sẽ duyệt tất cả các key trong Object 
+
+3. Vòng lặp for-in:
+   1. Duyệt qua tất cả các Phần tử của 1 String, Array (KO DÙNG CHO OBJECT)
+   2. Cú pháp:
+         ```js
+            for(var of object){
+               // Code
+            }
+         ```
+   3. Trong đó:
+      1. var: là tên biến
+      2. iterable: mảng hoặc string, vòng này sẽ duyệt tất cả các giá trị trong mảng
+4. while: Như C++
+5. do-while: Như C++
 ## V. Làm việc với hàm
 
 ### 1. Định nghĩa:

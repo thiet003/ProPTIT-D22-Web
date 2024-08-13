@@ -538,7 +538,7 @@ header{
 
 /*SS4: Ranking*/
 .ss4_ranking{
-    background-color:#F0F0F0;
+    background-color:red;
     display: flex;
     justify-content: center;
     
