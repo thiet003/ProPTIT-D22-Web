@@ -6,6 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- HEADER -->
@@ -38,11 +42,74 @@
                         <a>
                             <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
                         </a>
-                        <div class="search-bar-container-focus-bg">
-                        </div>
+                        <div class="search-bar-container-focus-bg"></div>
                         <div class="search-bar-container-focus-content">
-                            <p>This is content</p>
+                            <div class="search-bar-container-focus-content-container">
+                                <div class="box-1">
+                                    <p>Back to School 2024</p>
+                                    <img src="./image/3300000026817.webp">
+                                </div>
+                                <div class="box-2">
+                                    <div class="head">
+                                        <img src="./image/ico_searchtrending_black.svg"></img>
+                                        <p><b>Từ khóa hot</b></p>
+                                    </div>
+                                    <div class="inner-item">
+                                        <div class="book">
+                                            <img src="./image/6975055754175_1.webp">
+                                            <p>Bút Marker Giá Tốt</p>
+                                        </div>
+                                        <div class="book">
+                                            <img src="./image/6975055754175_1.webp">
+                                            <p>Bút Marker Giá Tốt</p>
+                                        </div>
+                                        <div class="book">
+                                            <img src="./image/6975055754175_1.webp">
+                                            <p>Bút Marker Giá Tốt</p>
+                                        </div>
+                                        <div class="book">
+                                            <img src="./image/6975055754175_1.webp">
+                                            <p>Bút Marker Giá Tốt</p>
+                                        </div>
+                                        <div class="book">
+                                            <img src="./image/6975055754175_1.webp">
+                                            <p>Bút Marker Giá Tốt</p>
+                                        </div>
+                                        <div class="book">
+                                            <img src="./image/6975055754175_1.webp">
+                                            <p>Bút Marker Giá Tốt</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="box-3">
+                                    <div class="head">
+                                        <img src="./image/ico_menu.svg">
+                                        <p>Danh mục nổi bật</p>
+                                    </div>
+                                    <div class="inner-item">
+                                        <div class="item">
+                                            <div class="image"><img src="./image/dragon_ball_super_bia_tap_19.webp"></div>
+                                            <p>Manga-Comic mới nhất</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image"><img src="./image/dragon_ball_super_bia_tap_19.webp"></div>
+                                            <p>Manga-Comic mới nhất</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image"><img src="./image/dragon_ball_super_bia_tap_19.webp"></div>
+                                            <p>Manga-Comic mới nhất</p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image"><img src="./image/dragon_ball_super_bia_tap_19.webp"></div>
+                                            <p>Manga-Comic mới nhất</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
+                        
                     </form>
                 </div>
                 
@@ -51,11 +118,20 @@
             
             <div class="inner-social">
                 <div class="inner-sociel-container">
-                    <div class="inner-item out">
+                    <div class="inner-item out" id="item-social1">
                         <a href="#">
                             <i class="fa-regular fa-bell"></i>
                             <p>Thông Báo</p>
                         </a>
+                    </div>
+                    <div class="notify-focus"  id="noti1">
+                        <img src="./image/ssss.png">
+                        <div style="background-color: red;">
+                            <p>Đăng nhập</p>
+                        </div>
+                        <div>
+                            <p>Đăng kí</p>
+                        </div>
                     </div>
                     <div class="inner-item in">
                         <a href="#">
@@ -63,11 +139,20 @@
                             <p class="out">Giỏ Hàng</p>
                         </a>
                     </div>
-                    <div class="inner-item in">
+                    
+                    <div class="inner-item in " id="item-social2">
                         <a href="#">
                             <i class="fa-solid fa-person"></i>
                             <p class="out">Tài Khoản</p>
                         </a>
+                    </div>
+                    <div class="notify-focus" id="noti2">
+                        <div style="background-color: red;">
+                            <p>Đăng nhập</p>
+                        </div>
+                        <div>
+                            <p>Đăng kí</p>
+                        </div>
                     </div>
                     <div class="language out">
                         <select>
@@ -188,15 +273,23 @@
                     <img src="/image/icon_dealhot_new.png">
                     <h1>Xu Hướng Mua Sắm</h1>
                 </div>
-                <div class="inner-menu">
-                    <li>Xu hướng theo ngày</li>
-                    <li>Sách HOT - Giảm sốc</li>
-                    <li>Bestseller Ngoại Văn</li>
-                </div>
                 <hr>
             </div>
+            <!-- Sử dụng những thẻ Input để Làm liên kết giữa các thẻ label và thẻ listbook khi chuyển tab. Nó ko cần phải ấn j nên cứ ẩn nó đi -->
+            <!-- Xếp những thẻ input - label xen kẽ, input xếp trước để sử dụng cái csss input:checked + label -->
+            <input id="Trendingtab-1" type="radio" name="radio-set" class="Trendingtab-selector-1" checked="checked">
+            <label for="Trendingtab-1" class="Trendinglabel-tab-1">Xu hướng theo ngày</label>
+            <input id="Trendingtab-2" type="radio" name="radio-set" class="Trendingtab-selector-2">
+            <label for="Trendingtab-2" class="Trendinglabel-tab-2">Sách HOT - Giảm sốc</label>
+            <input id="Trendingtab-3" type="radio" name="radio-set" class="Trendingtab-selector-3">
+            <label for="Trendingtab-3" class="Trendinglabel-tab-3">Bestseller Ngoại Văn</label>
+            
+            
+            <!-- Cần cái này để tách cái đống label trên khỏi cái conatiner bên dưới khi set position -->
+            <div class="clear-shadow"></div> 
+
             <div class="inner-listbook">
-                <div class="container-listbook">
+                <div class="container-listbook list1">
                     <div class="book">
                         <div class="display">
                             <a class="image">
@@ -518,7 +611,650 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="container-listbook list2">
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/9784065351710.webp">
+                            </a>
+                            <a class="title">
+                                <p>Anh trai vượt ngàn chông gai - Tập 1 - Tặng Kèm Standee Ivory</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/9784065351710.webp">
+                            </a>
+                            <a class="title">
+                                <p>Anh trai vượt ngàn chông gai - Tập 1 - Tặng Kèm Standee Ivory</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/9784065351710.webp">
+                            </a>
+                            <a class="title">
+                                <p>Anh trai vượt ngàn chông gai - Tập 1 - Tặng Kèm Standee Ivory</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/9784065351710.webp">
+                            </a>
+                            <a class="title">
+                                <p>Anh trai vượt ngàn chông gai - Tập 1 - Tặng Kèm Standee Ivory</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/9784065351710.webp">
+                            </a>
+                            <a class="title">
+                                <p>Anh trai vượt ngàn chông gai - Tập 1 - Tặng Kèm Standee Ivory</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/9784065351710.webp">
+                            </a>
+                            <a class="title">
+                                <p>Anh trai vượt ngàn chông gai - Tập 1 - Tặng Kèm Standee Ivory</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/9784065351710.webp">
+                            </a>
+                            <a class="title">
+                                <p>Anh trai vượt ngàn chông gai - Tập 1 - Tặng Kèm Standee Ivory</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/9784065351710.webp">
+                            </a>
+                            <a class="title">
+                                <p>Anh trai vượt ngàn chông gai - Tập 1 - Tặng Kèm Standee Ivory</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/9784065351710.webp">
+                            </a>
+                            <a class="title">
+                                <p>Anh trai vượt ngàn chông gai - Tập 1 - Tặng Kèm Standee Ivory</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/9784065351710.webp">
+                            </a>
+                            <a class="title">
+                                <p>Anh trai vượt ngàn chông gai - Tập 1 - Tặng Kèm Standee Ivory</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-listbook list3">
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/nong-gian-la-ban-nang-1_1.webp">
+                            </a>
+                            <a class="title">
+                                <p>Nóng Giận Là Bản Năng, Tĩnh Lặng Là Bản Lĩnh (Tái Bản 2020)</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/nong-gian-la-ban-nang-1_1.webp">
+                            </a>
+                            <a class="title">
+                                <p>Nóng Giận Là Bản Năng, Tĩnh Lặng Là Bản Lĩnh (Tái Bản 2020)</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/nong-gian-la-ban-nang-1_1.webp">
+                            </a>
+                            <a class="title">
+                                <p>Nóng Giận Là Bản Năng, Tĩnh Lặng Là Bản Lĩnh (Tái Bản 2020)</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/nong-gian-la-ban-nang-1_1.webp">
+                            </a>
+                            <a class="title">
+                                <p>Nóng Giận Là Bản Năng, Tĩnh Lặng Là Bản Lĩnh (Tái Bản 2020)</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/nong-gian-la-ban-nang-1_1.webp">
+                            </a>
+                            <a class="title">
+                                <p>Nóng Giận Là Bản Năng, Tĩnh Lặng Là Bản Lĩnh (Tái Bản 2020)</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/nong-gian-la-ban-nang-1_1.webp">
+                            </a>
+                            <a class="title">
+                                <p>Nóng Giận Là Bản Năng, Tĩnh Lặng Là Bản Lĩnh (Tái Bản 2020)</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/nong-gian-la-ban-nang-1_1.webp">
+                            </a>
+                            <a class="title">
+                                <p>Nóng Giận Là Bản Năng, Tĩnh Lặng Là Bản Lĩnh (Tái Bản 2020)</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/nong-gian-la-ban-nang-1_1.webp">
+                            </a>
+                            <a class="title">
+                                <p>Nóng Giận Là Bản Năng, Tĩnh Lặng Là Bản Lĩnh (Tái Bản 2020)</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/nong-gian-la-ban-nang-1_1.webp">
+                            </a>
+                            <a class="title">
+                                <p>Nóng Giận Là Bản Năng, Tĩnh Lặng Là Bản Lĩnh (Tái Bản 2020)</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="display">
+                            <a class="image">
+                                <img src="/image/nong-gian-la-ban-nang-1_1.webp">
+                            </a>
+                            <a class="title">
+                                <p>Nóng Giận Là Bản Năng, Tĩnh Lặng Là Bản Lĩnh (Tái Bản 2020)</p>
+                            </a>
+                        </div>
+                        <div class="cost">
+                            <div class="c1">
+                                <p class="new-cost">33.250 đ</p>
+                                <div class="discount">
+                                    <p>-5%</p>
+                                </div>
+                            </div>
+                            <p class="old-cost">
+                                35.000 đ
+                            </p>
+                        </div>
+                        <div class="evaluation">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <img src="/image/ico_star_yellow.svg">
+                            <span>(5)</span>
+                        </div>
+                        <div class="count">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
                 <div class="box-button">
                     <a class="button" href="#">
                         <p>Xem Thêm</p>  
@@ -836,11 +1572,11 @@
 
 
 
-    <footer>
+    <div class="footer">
         <div class="container">
             <div class="box1">
                 <div class="logo1">
-                    <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/fahasa-logo.png" alt style="width:220px; vertical-align: middle;">
+                    <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/fahasa-logo.png">
                 </div>
                 <div class="info">
                     <p>Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM
@@ -858,26 +1594,25 @@
                     <div class="item">
                         <h1>DỊCH VỤ</h1>
                         <p>Điều khoản sử dụng</p>
-                        <p>Điều khoản sử dụng</p>
-                        <p>Điều khoản sử dụng</p>
-                        <p>Điều khoản sử dụng</p>
-                        <p>Điều khoản sử dụng</p>
+                        <p>Chính sách bảo mật thông tin cá nhân</p>
+                        <p>Chính sách bảo mật thanh toán</p>
+                        <p>Giới thiệu Fahasa</p>
+                        <p>Hệ thống trung tâm - nhà sách</p>
                     </div>
                     <div class="item">
-                        <h1>Hỗ trợ</h1>
-                        <p>Điều khoản sử dụng</p>
-                        <p>Điều khoản sử dụng</p>
-                        <p>Điều khoản sử dụng</p>
-                        <p>Điều khoản sử dụng</p>
-                        <p>Điều khoản sử dụng</p>
+                        <h1>HỖ TRỢ</h1>
+                        <p>Chính sách đổi - trả - hoàn tiền</p>
+                        <p>Chính sách bảo hành - bồi hoàn</p>
+                        <p>Chính sách vận chuyển</p>
+                        <p>Chính sách khách sỉ</p>
+                        <p>Phương thức thanh toán và xuất HĐ</p>
                     </div>
                     <div class="item">
-                        <h1>DỊCH VỤ</h1>
-                        <p>Điều khoản sử dụng</p>
-                        <p>Điều khoản sử dụng</p>
-                        <p>Điều khoản sử dụng</p>
-                        <p>Điều khoản sử dụng</p>
-                        <p>Điều khoản sử dụng</p>
+                        <h1>TÀI KHOẢN CỦA TÔI</h1>
+                        <p>Đăng nhập/Tạo mới tài khoản</p>
+                        <p>Thay đổi địa chỉ khách hàng</p>
+                        <p>Lịch sử mua hàng</p>
+                        <p>Chi tiết tài khoản</p>
                     </div>
                 </div>
                 <div class="contact">
@@ -909,6 +1644,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+        
+    </div>
 </body>
 </html>

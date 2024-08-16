@@ -1,40 +1,53 @@
 //I. Javascript Callback Functions
 
-    //ĐK: Là hàm khi đc truyền qua đối số khi gọi 1 hàm khác
-        //1. Là hàm
-        //2. Đc truyền qua đối số.
-        //3. Đc gọi lại trong hàm nhận đối số
-        function myFunction(parafram) {
-            console.log(parafram)
-        }
+//ĐK: Là hàm khi đc truyền qua đối số khi gọi 1 hàm khác
+    //1. Là hàm
+    //2. Đc truyền qua đối số.
+    //3. Đc gọi lại trong hàm nhận đối số
+
+    // function myFunction(parafram) {
+    //     console.log(parafram)
+    // }
+
+
+    //C1: 
+        //ĐK 1:Là hàm:
+        // function myCallBack(){
+
+        // }
+        //ĐK2: Đc tr qua đối số 
+        //myFunction(myCallBack)
+        //=> myCallBack là hàm callback
+
+    //C2:
     
-    
-        //C1: 
-            //ĐK 1:Là hàm:
-            function myCallBack(){
-    
-            }
-            //ĐK2: Đc tr qua đối số 
-            myFunction(myCallBack)
-            //=> myCallBack là hàm callback
-    
-        //C2:
-    
-    //II.
-    
-    var courses = [
-        'JS',
-        'C',
-        'C++',
-    ]
-    
-    courses.map(function(course) {
-        console.log(course)
-    })
+//II.
+// var courses = [
+//     'JS',
+//     'C',
+//     'C++',
+// ]
+
+// courses.map(function(course) {
+//     console.log(course)
+// })
+
+//III. Ứng dụng:
+    // Xử lý bất đồng bộ: Có thể thấy tk Promise nó sẽ không chờ khởi tạo Đối tượng mà nó chạy thẳng ra console chạy luôn. Và ta phải dùng setTimeout để chờ cho đến khi Ktao xong thì mới hiển thij đc
+    // var promise3 = new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //         resolve();
+    //     }, 3000);
+    // })
+    // console.log(promise3)
+    // setTimeout(() => {
+    //     console.log('wait 5s')
+    //     console.log(promise3)
+    // }, 5000);
 
 
 
-//2. PROMISSE
+//IV. PROMISSE
 // 1. VD 1: Promisse
 // var a = 10;
 // var promise1 = new Promise((resolve, reject) => {

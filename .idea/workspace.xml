@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fc8ed95-de8a-4c75-b075-131c99616a24" name="Changes" comment="Buổi 1(JS) - 2" />
+    <list default="true" id="9fc8ed95-de8a-4c75-b075-131c99616a24" name="Changes" comment="Buổi 1(JS) - 3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaiTapLon_2 (Fahasa)/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/BaiTapLon_2 (Fahasa)/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaiTapLon_2 (Fahasa)/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/BaiTapLon_2 (Fahasa)/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/arr.js" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/arr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/callback.js" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/callback.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/function.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/learn/learn.md" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/learn/learn.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/object.js" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/object.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/operator.js" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/operator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/string.js" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 7 _ JS Cơ bản -1/string.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,12 +68,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723484226090</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Buổi 1(JS) - 3">
+      <option name="closed" value="true" />
+      <created>1723550998544</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723550998544</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Buổi 1(JS) - 1" />
     <MESSAGE value="Buổi 1(JS) - 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Buổi 1(JS) - 2" />
+    <MESSAGE value="Buổi 1(JS) - 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buổi 1(JS) - 3" />
   </component>
 </project>

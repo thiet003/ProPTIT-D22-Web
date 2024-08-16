@@ -1,5 +1,10 @@
 # BUỔI 7. JAVA SCRIPT CƠ BẢN
 
+
+## NOTE:
+- Hoisting: Là cách mà JS chuyển việc khai báo tất cả các biến, hàm lên trên đầu
+  - Vd: Nếu ta console a, rồi mới khai báo a = 5 => nó sẽ cho a là undefined (vì ta chưa khởi tạo giá trị cho a)
+  - Nhưng với hàm, ta sẽ là ng khai báo cho nó, nên JS chuyển hàm cà ta khai báo cho hàm lên đầu.
 ## I. Khai báo dữ liệu
 ### 1. Cấu trúc trong JavaScript
 #### 1. Định nghĩa:
@@ -43,7 +48,11 @@
    1. Là toán tử dùng để thực hiện các phép toán số học:
    2. Danh sách các toán tử số học:
       1. ![alt text](image-2.png)
-   3. Lưu ý: toán tử ++, --:
+   3. Lưu ý: Toán tử + nếu mà là số với chuỗi là nối chuỗi
+      1. Còn với -, *, /:
+         1. Nếu chuỗi là chuỗi số thì nó sẽ convert về số
+         2. nếu là chuỗi kí tự: ra NaN
+   4. Lưu ý: toán tử ++, --:
       1. ++a là tăng trước rồi lấy giá trị sau
       2. a++ là lấy giá trị rồi mới tăng
 2. Toán tử gán:
@@ -144,6 +153,9 @@
 #### e. Constructor: Kiểu kiểu constructor của Java
 - Là 1 hàm giúp ta khởi tạo 1 Object như ta muốn. Các Object tạo từ hàm này có cùng các thuộc tính.
   
+
+#### f. Object Method:
+![alt text](image-11.png)
 
 
 ### 4. ARRAY:
@@ -379,7 +391,11 @@
 1. ĐN:
 - Là 1 hàm truyền dưới dạng đối số của 1 hàm khác.
 - Hàm callback có thể gọi ngay sau khi các chức năng khác kết thúc
-2. ĐK: Là hàm khi đc truyền qua đối số khi gọi 1 hàm khác
+2. Tác dụng:
+- Javascript hỗ trợ lập trình hướng sự kiện và **bất đồng bộ** nên callback function đóng vai trò rất quan trọng. Ta sẽ truyền callback function vào các hàm xử lý sự kiện và hàm xử lý bất đồng bộ đó.
+- Sử dụng trong các trường hợp:
+  - Các hàm cần phải chờ kết quả của hàm trước để tiếp tục thực hiện. (Do tk JS nó bất đồng bộ nên 1 số th nó sẽ nhảy qua luôn.)
+1. ĐK: Là hàm khi đc truyền qua đối số khi gọi 1 hàm khác
    1. Là hàm
    2. Đc truyền qua đối số.
    3. Đc gọi lại trong hàm nhận đối số 
@@ -417,3 +433,12 @@
 ```
 
 ### 3. Promise ALL.
+1. Giúp cáco Promise thực thi song song. Tổng thời gian chạy của các Promise bằng Promise lớn nhất
+2. Lưu ý: Nếu  1 trong số các promise bị reject thì chương trình chạy vào catch ngay. 
+   1. 1 vài ứng dụng: 
+      1. Gửi nhièu Email cùng 1 lúc(Thay cho việc dùng 1 vòng lặp)
+      2. Lấy nhiều API: Nếu muốn lấy nhiều API độc lập thì nên sd, sẽ giảm đc tg
+3. VD: Nếu làm như sau, ta sẽ mất tổng 3 + 5 + 7s
+   1. ![alt text](image-12-1.png)
+   2. Thay vif thế ta sử dụng chúng //:
+      1. ![alt text](image-22.png)

@@ -15,7 +15,8 @@
     // -- : Lưu ý cái này cũng có cái trò tiền tố hâụ tố (a--, --a)
     var a = 2
     var b = 3
-    
+    var z = "88"
+    var t = "Tran"
     var c1 = a + b
     var c2 = a - b
     var c3 = a * b
@@ -23,6 +24,14 @@
     var c5 = a ** b
     var c6 = a % b
     
+
+    var c7 = a / z;
+    var c8 = a - z;
+    var c9 = a * z;
+
+    var c10 = a / t;
+    var c11 = a - t;
+    var c12 = a * t;
     a++
     b--
     
@@ -33,6 +42,12 @@
     console.log(c5);
     console.log(c6);
     
+    console.log("C7" ,c7);
+    console.log("C8" ,c8);
+    console.log("C9" ,c9);
+    console.log("C10" ,c10);
+    console.log("C11" ,c11);
+    console.log("C12" ,c12);
     console.log('a:' + a + ' b:' + b);
     
     

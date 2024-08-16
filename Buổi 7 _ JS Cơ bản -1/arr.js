@@ -20,11 +20,13 @@
         function(){
 
         },
-        {}
+        {},
+        'C++++++'
+
     ]
 
     console.log(languages)
-
+    console.log(typeof(languages))
     //c2:
     var languages2  = new Array(
         'JS',
@@ -35,7 +37,7 @@
         undefined,
         function(){
         },
-        {}
+        {},
     )
     console.log(languages)
 
@@ -100,7 +102,7 @@
 
     //7. slicing: cắt 1 vài element của mảng
 
-    console.log(languages.slice(1, 4)); // tu 1 -> 4
+    console.log("slice: ", languages.slice(1, 4)); // tu 1 -> 4
 
 
 //III. Array Method:
