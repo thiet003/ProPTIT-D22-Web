@@ -90,7 +90,7 @@
     console.log(languages)
 
 
-    console.log("splice chèn:")
+    console.log("splice chèn:") // (a, b,"Str"): b là số phần tử bị xóa từ tk a.
     languages.splice(1, 0, "Dash") // 1: Đặt điểm bắt đầu , //0: Số phần tử xoá từ điểm đó(ta xoá 0 phần tử vì ta cần chèn thôi, chứ xoá j dou), string cuối là chèn thêm tk ấy vào
     console.log(languages)
     languages.splice(1, 2, "Control") // xoá 2 tk, thay 1 tk vào đó
@@ -102,7 +102,7 @@
 
     //7. slicing: cắt 1 vài element của mảng
 
-    console.log("slice: ", languages.slice(1, 4)); // tu 1 -> 4
+    console.log("slice: ", languages.slice(1, 4)); // tu 1 -> 4 - 1
 
 
 //III. Array Method:
@@ -160,16 +160,18 @@
         })// call back: hamf la tham so
         console.log(isHasFree)
 
-    //find: Tìm xem trong tất cả các tk có tk nào có : 1 key mà = VALUE mà ta đang tìm hay ko, hoặc 1 thuộc tính nào đó ko, nếu có thì nó trả về CHÍNH TK OBJECT ĐÓ
+    //find: Tìm xem trong tất cả các tk có tk nào có : 
+            //1 key mà = VALUE mà ta đang tìm hay ko, hoặc 1 thuộc tính nào đó ko, nếu có thì nó trả về CHÍNH TK OBJECT ĐÓ
+            //2. Hoặc 1 ĐK nào đó đc viết bằng cách truyền vào 1 đối số là 1 hàm tự code.
         console.log('4. find: ')
-        var isHasName = courses.find(function(course, id) {
+        var isHasName = courses.find(function(course, id, array) { // 3 thuộc tính mà tk find trả ra: value, iD, array, tất cả những tk gọi đến callback với id thì đều thế
             return course.name === 'C++'
         })// call back: hamf la tham so
         console.log(isHasName)
 
     //fillter: Tìm xem trong tất cả các tk có tk nào có : 1 key mà = VALUE mà ta đang tìm hay ko, hoặc 1 thuộc tính nào đó ko, nếu có thì nó trả về TẤT CẢ OBJECT CÓ NÓ
-        console.log('4. find: ')
-        var isHasCoin = courses.filter(function(course, id) {
+        console.log('5. filter: ')
+        var isHasCoin = courses.filter(function(course, id, array) {
             return course.coin === 250
         })// call back: hamf la tham so
         console.log(isHasCoin)
@@ -184,6 +186,20 @@
         //Sau bước gọi map, nó sẽ dùng element, gọi ngược lại cái courseHandler, tra về mấy cái đối số
 
         console.log(newCourses) // in ra caí return trong courseHandler
+
+        // custom
+        console.log('CUstom Map ')
+        function courseHandler_New(course){
+            course.name += '_cleared'
+            console.log(course)
+            return course
+        }
+        var newCourses2 = courses.map(courseHandler_New); // Trả về mảng mới có đúng số element của mảng cũ
+        //Trong map la 1 cái vòng lặp qua tất cả các object
+        //Sau bước gọi map, nó sẽ dùng element, gọi ngược lại cái courseHandler, tra về mấy cái đối số
+
+        console.log(newCourses2) // in ra caí return trong courseHandler
+
 
     //Reduce: Muốn nhận về 1 giá trị duy nhất sau khi xử lý
         console.log("Reduce:")
@@ -203,6 +219,7 @@
                     'Luot chay: ': i,
                     'Bien Tich Tru - Lúc đầu = initialValue, sẽ đc lưu khi ta return 1 cái j đó: ': accumulator
                 })
+                // return accumulator + currentValue.coin
             }
             var totalCoin2 = courses.reduce(coinHandler1, 0);  //0 chính là cái totalCoin đó
 
@@ -229,3 +246,73 @@
     var title = "Xin Chao Cac Bn"
     console.log(title.includes('Xin'))
     console.log(title.includes('Xin', 2))
+
+
+
+//* Săps xếp
+    //sort:
+    arr1 = [
+        'js',
+        'css',
+        'c++',
+        'c'
+    ]
+    arr2 = [
+        1,
+        100,
+        120,
+        20
+    ]
+    arr1.sort()
+    //arr2.sort()
+    console.log(arr1)
+    console.log(arr2)
+    
+    //Nếu sort mà ko muốn làm thay đổi mảng ban đâu:
+    arr3 = arr2.toSorted()
+    console.log(arr3)
+
+
+
+    // Example:
+    console.log("EXAMPLE")
+    let people = [
+        { name: 'Alice', age: 21 },
+        { name: 'Bob', age: 25 },
+        { name: 'Charlie', age: 21 },
+        { name: 'David', age: 25 }
+    ];
+    // Output
+    // {
+    //     "21": [
+    //         { "name": "Alice", "age": 21 },
+    //         { "name": "Charlie", "age": 21 }
+    //     ],
+    //     "25": [
+    //         { "name": "Bob", "age": 25 },
+    //         { "name": "David", "age": 25 }
+    //     ]
+    // }
+
+
+    function wrapPeo(accumulator, currentID, id, array){
+        let checkNew = 1
+       // console.log(accumulator)
+        if(accumulator.length != 0){
+            // for(key in accumulator){
+            //     if(currentID.age == key){ //xai ==
+            //         checkNew = 0;
+            //     }
+            // }
+
+            if(!accumulator[currentID.age]){ //xai ==
+                checkNew = 0;
+            }
+            if(checkNew == 1)   accumulator[currentID.age] = new Array();
+        }
+        accumulator[currentID.age].push(currentID)
+        return accumulator
+    }
+
+    let outputPeople = people.reduce(wrapPeo, {})
+    console.log(outputPeople)

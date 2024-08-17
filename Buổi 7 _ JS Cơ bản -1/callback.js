@@ -5,18 +5,19 @@
     //2. Đc truyền qua đối số.
     //3. Đc gọi lại trong hàm nhận đối số
 
-    // function myFunction(parafram) {
-    //     console.log(parafram)
-    // }
+    function myFunction(parafram) {
+        console.log(parafram)
+        console.log("Hi World")
+    }
 
 
     //C1: 
         //ĐK 1:Là hàm:
-        // function myCallBack(){
-
-        // }
+        function myCallBack(){
+            return "Hello World"
+        }
         //ĐK2: Đc tr qua đối số 
-        //myFunction(myCallBack)
+        myFunction(myCallBack)
         //=> myCallBack là hàm callback
 
     //C2:
@@ -100,39 +101,39 @@
 
 
 //3. VD3: Promise ALL:
-var a = 10;
-var b = 20;
-var c = 30;
-var d = 40;
-var e = 50;
-var f = 60;
-var promise4 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve(a + b);
-    }, 3000);
-});
+// var a = 10;
+// var b = 20;
+// var c = 30;
+// var d = 40;
+// var e = 50;
+// var f = 60;
+// var promise4 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve(a + b);
+//     }, 3000);
+// });
 
-var promise5 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve(c + d);
-    }, 5000);
-});
+// var promise5 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve(c + d);
+//     }, 5000);
+// });
 
-var promise6 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve(e + f);
-    }, 7000);
-});
+// var promise6 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve(e + f);
+//     }, 7000);
+// });
 
 
 
-Promise.all([promise4, promise5, promise6])
-    .then(() => {
-        console.log(promise4 + promise5 + promise6)
-    })
-    .catch(() => {
-        console.log("ERROOOr")
-    })
-    .finally(() => {
-        console.log("Luon vao day")
-    })
+// Promise.all([promise4, promise5, promise6])
+//     .then(() => {
+//         console.log(promise4 + promise5 + promise6)
+//     })
+//     .catch(() => {
+//         console.log("ERROOOr")
+//     })
+//     .finally(() => {
+//         console.log("Luon vao day")
+//     })
