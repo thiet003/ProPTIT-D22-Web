@@ -302,7 +302,7 @@
             // for(key in accumulator){
             //     if(currentID.age == key){ //xai ==
             //         checkNew = 0;
-            //     }
+            //     }tmp
             // }
 
             if(!accumulator[currentID.age]){ //xai ==
