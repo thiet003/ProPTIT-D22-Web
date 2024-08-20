@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn">Click Me! 1</button>
+    <button id="btn2">Click Me! 2</button>
+    <p id="demo1"></p>
+    <br>
+    <p id="demo2"></p>
+    
+    <h2>IV. </h2>
+
+    <div class="box4"></div>
+
+    <h2>V. </h2>
+
+    <div class="box5"></div>
+    <script>
+        let hello = "";
+        hello = function() {
+            document.getElementById("demo1").innerHTML += this;
+        }
+        window.addEventListener("load", hello);
+        document.getElementById("btn").addEventListener("click", hello);
+
+        let hello2 = "";
+        hello2 = () => {
+            document.getElementById("demo2").innerHTML += this;
+        }
+        window.addEventListener("load", hello2);
+        document.getElementById("btn2").addEventListener("click", hello2);
+
+
+        // IV. template literals:
+            // MMẫu thẻ HTML:
+            let header = "Template Strings";
+            let tags = ["template strings", "javascript", "es6"];
+
+            let html = `<h2>${header}</h2><ul>`;
+            for (const x of tags) {
+                html += `<li>${x}</li>`;
+            }
+
+            html += `</ul>`;
+            console.log(html)
+            let box4 = document.querySelector('.box4')
+            box4.innerHTML = html
+
+
+        //V. Destructing Assignment:
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50
+        };
+
+        // Destructuring
+            let {firstName, lastName} = person;
+            console.log({firstName, lastName})
+            console.log(person)
+
+            let {firstName : fiN, lastName2, country = "VN"} = person; // Ko đc đặt trung tên key vs tk destruc trên
+            console.log(country)
+            console.log(fiN)
+            let {firstName : fiN3} = person;
+            console.log(fiN3)
+            document.querySelector(".box5").innerHTML =
+            firstName + " " + lastName;
+
+        // Arr des:
+        const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
+
+        let [fruit1, fruit2] = fruits;
+        let {[0]:fruitOne ,[1]:fruitTwo} = fruits; // Ko đc đặt trung tên key vs tk destruc trên
+
+        // Create a Map
+        const fruits2 = new Map([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oranges", 200]
+        ]);
+
+        // Destructing
+        let text = "";
+        for (const [key, value] of fruits2) {
+            text += key + " is " + value +"\n";
+        }
+        console.log(text)
+    </script>
+
+</body>
+</html>
