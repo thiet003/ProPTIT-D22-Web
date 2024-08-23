@@ -7,3 +7,8 @@ export function S(r){
 export function P(r){
     return r * 2 * pi
 }
+module.export = {
+    pi,
+    S,
+    R
+}

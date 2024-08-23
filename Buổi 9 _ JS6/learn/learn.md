@@ -26,11 +26,12 @@
 
     ```
 3. Từ khóa this:
-   1. Với các hàm thông thường, từ khóa this thường là đại diện cho tk Object mà gọi đến cái function
-   2. Với tk Arrow Function, từ khóa this là đại diện cho tk Object mà định nghĩa cái function
+   1. Với các hàm thông thường, từ khóa this là đại diện cho tk Object mà định nghĩa cái function
+   2. Với tk Arrow Function, từ khóa this thường là đại diện cho tk Object mà gọi đến cái function
 
 ## IV. Template literals:
-1. Nội suy biến và biểu thức thành chuỗi:
+1. Khai báo: Nó ở trong dấu `` (ko phải dấu nháy đơn đâu) . Cách này giúp ta có thể tạo 1 chuỗi xuống dòng.
+2. Nội suy biến và biểu thức thành chuỗi:
    1. Cú pháp: `${...}` 
    2. VD: 
         ```js
@@ -70,6 +71,8 @@
             // Destructuring
             let {firstName, lastName} = person;
             console.log({firstName, lastName})
+            console.log(firstName)
+            console.log(lastName)
         ```
         - ![alt text](image.png)
    3. Có thể tạo thêm các Key khác:
@@ -105,7 +108,10 @@
             const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
 
             // Destructuring
+
+            /
             let [fruit1, fruit2] = fruits;
+            let {[0]:fruitOne ,[1]:fruitTwo} = fruits; // Ko đc đặt trung tên key vs tk destruc trên
         ```
    3. Map Destructing
         ```js
@@ -143,3 +149,45 @@
 - Các mô-đun cũng dựa vào thẻ `<script>.type="module"`, và src chỉ cần nhập 1 tk js chính là đc.
 2. Default Export:
 - Là tạo 1 dữ liệu export mặc định, nếu import mà không đc cái dữ liệu(hoặc là nó ko tồn tại trong module) => Nó sẽ gọi đến dèault export
+3. Đổi tên các hàm, biến.
+   1. ![alt text](image-14.png)
+4. Nếu muốn export nhiều:
+   1. `module.export() {tất cả các hàm, biến}`
+
+## VII: Exports() và Require():
+1. Exports(): Là ngày 
+
+## VIII. Spread Operator:
+1. ĐN:
+   1. Spread Operator JavaScript (...) mở rộng một lần lặp (giống như một mảng) thành nhiều phần tử hơn.
+   2. Điều này cho phép ta nhanh chóng sao chép tất cả hoặc các phần của một mảng hiện có sang một mảng khác mảng:
+2. Cách sử dụng:
+   1. Ghép mảng:
+        ```js
+            const numbersOne = [1, 2, 3];
+            const numbersTwo = [4, 5, 6];
+            const numbersCombined = [...numbersOne, ...numbersTwo]; // 1, 2, 3, 4, 5, 6
+        ```
+   2. Tách thành 1 mảng mới:
+        ```js
+            const numbers = [1, 2, 3, 4, 5, 6];
+
+            const [one, two, ...rest] = numbers; // one: 1, two: 2, rest:3, 4, 5, 6
+            const [mot, hai, ba, ...conlai] = numbers;// mot: 1, hai: 2, ba: 3, rest: 4, 5, 6
+        ```
+   3. Sử dụng với đối tượng:
+        ```js
+            const ob1 = {
+                v1: '1111',
+                v2: '2222',
+                v3: '3333'
+            }
+
+            const ob2 = {
+                v3: '9999',
+                v4: '4444',
+                v5: '5555'
+            }
+
+            const ob = {...ob1, ...ob2} //ob: v1: 1111, v2: 2222, v3: 9999, v4: 4444, v5: 5555
+        ```
