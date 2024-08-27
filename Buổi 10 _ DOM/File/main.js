@@ -2,7 +2,7 @@
 
 // // 1. Element:
     //a. getElementById: Lấy 1 tk duy nhất, Id trùng thì lấy tk đầu
-    // var headingNode = document.getElementById('the heading h1')
+    // var headingNode = document.getElementById('the_heading_h1')
 
     // console.log(headingNode)
 
@@ -31,14 +31,10 @@
 
     // //d. CSS selector: Hya dùng vì dễ chọn hết các element
     // console.log('CSS selector:')
-    // var headingNodes_by_CSSselector = document.querySelector('.h1')
+    // var headingNodes_by_CSSselector = document.querySelector('h1')
 
-    // console.log(headingNodes_byTag)
-
-    // console.log({
-    //     element: headingNodes_byTag
-    // })
-
+    // console.log(headingNodes_by_CSSselector)
+    // headingNodes_by_CSSselector.classList.add("blue")
     // // e. HTML Collection: nó có 1 số cái thẻ thôi: a, form,...
     // console.log(document.forms)
     // console.log(document.forms['form-1']) // Lấy phần tử trong mảng thôi
@@ -141,21 +137,21 @@
 
 // V. DOM CSS:
 
-    var boxElement8 = document.querySelector('.box_8')
-    console.log(boxElement8.style)
+//     var boxElement8 = document.querySelector('.box_8')
+//     console.log(boxElement8.style)
 
 
-    //VD1: Set cho the div w, h, background
-    boxElement8.style.width = '100px'
-    boxElement8.style.height = '100px'
-   // boxElement8.style.backgroundColor = 'red'
+//     //VD1: Set cho the div w, h, background
+//     boxElement8.style.width = '100px'
+//     boxElement8.style.height = '100px'
+//    // boxElement8.style.backgroundColor = 'red'
     
-    console.log(boxElement8.style.backgroundColor)
-    // Muốn thay đổi nhiều mà ko cần gõ nhiều dòng:
-    Object.assign(boxElement8.style, {
-        width: '200px',
-        height: '100px',
-        backgroundColor: 'green'
-    }) // dối số 1: style, 2: list các đối số muốn đổi + giá trị
+//     console.log(boxElement8.style.backgroundColor)
+//     // Muốn thay đổi nhiều mà ko cần gõ nhiều dòng:
+//     Object.assign(boxElement8.style, {
+//         width: '200px',
+//         height: '100px',
+//         backgroundColor: 'green'
+//     }) // dối số 1: style, 2: list các đối số muốn đổi + giá trị
 
-    console.log(boxElement8.style.backgroundColor)
+//     console.log(boxElement8.style.backgroundColor)

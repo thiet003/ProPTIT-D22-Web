@@ -10,15 +10,14 @@
    2. Attribute
    3. Text
 3. Thực chất, cái ta học là HTML DOM(tiêu chuẩn cho HTML), ngoài ra còn có CoreDOM, XMLDOM,...
-
-
-
+4. DOM được xây dựng bằng cách sử dụng nhiều API hoạt động cùng nhau. DOM cốt lõi xác định các thực thể mô tả bất kỳ tài liệu nào và các đối tượng bên trong nó. Điều này được mở rộng khi cần bởi các API khác bổ sung các tính năng và khả năng mới cho DOM. Ví dụ, API DOM HTML thêm hỗ trợ cho việc biểu diễn các tài liệu HTML vào DOM cốt lõi và API SVG thêm hỗ trợ cho việc biểu diễn các tài liệu SVG.
 
 ## II. DOM API:
 1. DOM API:
    1. Là cái để Browser đọc HTML. Nó sẽ phải access vào DOM bằng DOM API (Web API)
-   2. JS là cái cung cấp phương tiện (syntax) để ta truy xuất vào HTML DOM. (JS là 1 ngôn ngữ kịch bản)
-   3. HTML DOM API được tạo thành từ các giao diện xác định chức năng của từng phần tử trong HTML, cũng như bất kỳ loại và giao diện hỗ trợ nào mà chúng dựa vào.
+   2. DOM không phải là một phần của ngôn ngữ JavaScript, mà là một Web API được sử dụng để xây dựng các trang web. JavaScript cũng có thể được sử dụng trong các ngữ cảnh khác. Ví dụ, Node.js chạy các chương trình JavaScript trên máy tính, nhưng cung cấp một bộ API khác và API DOM không phải là một phần cốt lõi của môi trường chạy Node.js.   
+   3. DOM được thiết kế để độc lập với bất kỳ ngôn ngữ lập trình cụ thể nào, giúp biểu diễn cấu trúc của tài liệu có sẵn từ một API duy nhất và nhất quán. Ngay cả khi hầu hết các nhà phát triển web chỉ sử dụng DOM thông qua JavaScript, các triển khai của DOM có thể được xây dựng cho bất kỳ ngôn ngữ nào, như ví dụ Python này minh họa:
+   4. HTML DOM API được tạo thành từ các giao diện xác định chức năng của từng phần tử trong HTML, cũng như bất kỳ loại và giao diện hỗ trợ nào mà chúng dựa vào.
 2. Các loại DOM trong JS:
    1. DOM document: ALL
    2. DOM element: Truy xuêts tới các thẻ HTML thông qua các cái: id class, tag name. Các cách truy xuất:
@@ -36,7 +35,6 @@
    6. DOM Listerner: có nhiệm vụ lắng nhge các sự kiện tác động lên thẻ HTML
    7. DOM Navigation: Để tâunr lý, thao tác với csc thẻ HTML, thể hiện mới quan hệ cha con của các thẻ HTML
    8. DOM NOdes: Theo tác với HTML qua Object.
-
 
 ## III. DOM Document Object:
 1. ĐN:

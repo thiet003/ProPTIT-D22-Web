@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .color_blue{
+            color: blue;
+        }
+    </style>
+    <!-- 1. Dom Event -->
+    <h1 class="h1_1" onload="bt_onLoad()">DOM EVENTS</h1>    
+    <input type="text" class="input_1">
+    <button class="button_1">ClickMe</button>
+
+
+    <!-- Để test cái StopPropagation -->
+    <!-- <div class="box_2" onclick="console.log('DIV')">
+        <button class="button2" onclick="console.log('The H1')">
+            Test Bubble Event, StopPropagation
+        </button>
+    </div> -->
+    <div class="box_2">
+        <button class="button2">
+            Test Bubble Event, StopPropagation
+        </button>
+    </div>
+
+    <h1 class="h1_3" >DOM EVENT LISTENER</h1>    
+    <button class="button3">
+        Test addEventListener
+    </button>
+
+    <!-- test preventnDefault -->
+    <a id="a_ELM" href="https://w3schools.com/">Go to W3Schools.com</a>
+
+    <script>
+        let button1 = document.querySelector('.button_1')
+        let h1_1 = document.querySelector('.h1_1')
+        let input_1 = document.querySelector('.input_1')
+
+        
+        h1_1.onload = function(){
+          //  alert("Hello World")
+        };
+
+
+        let foCus = 1;
+        let bLur = 1;
+        input_1.onblur = function(){
+            console.log("blur: " , bLur)
+            bLur ++;
+        }
+        input_1.onfocus = function(){
+            console.log("focus: ", foCus)
+            foCus ++;
+        }
+        
+        button1.onclick = function(){
+            console.log("click => output: " ,input_1.value)
+        }
+
+        input_1.onchange = function(){
+            console.log("changed: ", input_1.value)
+        }
+
+        // input_1.oninput = function(){
+        //     console.log("changed auto: ", input_1.value)
+        // }
+
+        // Demo addEventListener
+        let button3 = document.querySelector('.button3')
+        function ham1(){
+            console.log("TMP1")
+        }
+        function ham2(){
+            console.log("TMP2 - Nếu gọi onclick 2 lần cả cho 1 và 2 thì chỉ nhận cái ở sau")
+        }
+        // button3.onclick = function(){
+        //     ham1()
+        // }
+        // button3.onclick = function(){
+        //     ham2()
+        // }
+
+        button3.addEventListener("click", ham1)
+        button3.addEventListener("click", ham2)
+
+        setTimeout(() => {
+            button3.removeEventListener('click', ham2)
+        }, 5000)
+
+
+        //test preventnDefault
+        document.getElementById("a_ELM").addEventListener("click", function(event){
+            event.preventDefault()
+        });
+
+        // test cái StopPropagation 
+        document.querySelector(".box_2").onclick = function(){
+            console.log('DIV');
+        }
+        document.querySelector(".button2").onclick = function(e){
+            e.stopPropagation();
+            console.log('Butotn H1');
+        }
+    </script>
+</body>
+</html>

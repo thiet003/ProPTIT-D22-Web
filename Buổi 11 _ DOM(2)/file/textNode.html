@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="box1"> Hello1
+        <h1 class="heading1">Heading1</h1>
+        <p>Content1</p>
+    </div>
+
+    <div class="box2"> Hello2
+        <h1 class="heading2">Heading2</h1>
+        <p>Content2</p>
+    </div>
+    
+    <script>
+        // 1. TEXT NODE in DOM
+
+        // a.InnerText & textContent Property | Text node in Dom
+        var box1 = document.querySelector('.box1')
+
+        console.log(box1)
+
+        //InnerText:
+        console.log('1: InnerText: ' , box1.innerText)
+        console.log('TextContent: ' , box1.textContent)
+
+        // CHỉnh sửa:
+        document.querySelector('.heading1').textContent = 'New Text Test Content'
+        console.log('2: New InnerText: ' , box1.innerText)
+        console.log('2: New TextConent:  ' , box1.textContent)
+        
+        
+        // console.log('3: InnerText: ' , box1.innerText)
+        // console.log('TextContent: ' , box1.textContent)
+        
+    </script>
+</body>
+</html>
