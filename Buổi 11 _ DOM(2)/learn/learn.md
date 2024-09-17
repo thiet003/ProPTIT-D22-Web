@@ -9,7 +9,7 @@
             //Code
         }
     ```
-3. Các DOM Event phổ biến:
+3. Các DOM Event phổ biến: //Tìm hiểu thêm về onunload, các loại HTML Event (Key Board,ClipBoard Event),.... 
    1. onload: Khi duyệt xong mọi thứ của trình duyệt, thì đoạn code mới thực thi
    2. onblur: Khi bỏ focus 1 phần tử.
    3. onfocus: Khi kích hoạt 1 phần tử.
@@ -30,10 +30,11 @@
 ## II. DOM Event Listener.
 
 1. ĐN: 
-   1. `addEventListener()` là phương thứ giúp 1 phần tử có thể lắng nghe sự kiện mà ta lựa chọn
+   1. `addEventListener(event, function, useCapture)` là phương thứ giúp 1 phần tử có thể lắng nghe sự kiện mà ta lựa chọn
    2. Điểm mạnh so với DOM Event: 
       1. Là có thể xử lý nhiều event cùng 1 lúc, không bị ghi đè như DOM Event
       2. Có thể xóa đi event mà ta đã set `removeEventListener()`
+      3. Có thể làm cái sự kiện nỏi bọt chạy ngc lại(chìm xuống), thêm cái useCapture thành true
 2. Code: 
    1. Thêm: `element.addEventListener("tenEvent", function)`
    2. Xóa: `element.removeEventListener("tenEvent", function)`
@@ -58,7 +59,9 @@
 
 1. preventDefault: 
    1. Ngăn chặn hành động mặc định của 1 thẻ.
-   2. VD như ngăn chặn 1 thẻ a mở cái link mà đc gán sẵn
+   2. VD như
+      1.  ngăn chặn 1 thẻ a mở cái link mà đc gán sẵn
+      2.  Ngăn 1 thẻ input: submit gửi đi dữ liệu
    3. Code:
     ```js
         <a id="a_ELM" href="https://w3schools.com/">Go to W3Schools.com</a>

@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc8ed95-de8a-4c75-b075-131c99616a24" name="Changes" comment="Buổi 10(JS)(DOM) - 1">
+    <list default="true" id="9fc8ed95-de8a-4c75-b075-131c99616a24" name="Changes" comment="Buổi 11(JS)(DOM_2) - 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaiTapLon_2 (Fahasa)/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/BaiTapLon_2 (Fahasa)/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaiTapLon_2 (Fahasa)/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/BaiTapLon_2 (Fahasa)/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buổi 11 _ DOM(2)/file/DOM_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 11 _ DOM(2)/file/DOM_events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buổi 11 _ DOM(2)/learn/learn.md" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 11 _ DOM(2)/learn/learn.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +37,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "TranXuanSonn",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/A.Documents/Code/CodePtit/Java"
+    "last_opened_file_path": "D:/A.Documents/Code/CodePtit"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -109,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724431420821</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Buổi 11(JS)(DOM_2) - 1">
+      <option name="closed" value="true" />
+      <created>1724755697944</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724755697944</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -119,6 +131,7 @@
     <MESSAGE value="Buổi 8(JS) - 1" />
     <MESSAGE value="Buổi 8(JS) - 2" />
     <MESSAGE value="Buổi 10(JS)(DOM) - 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Buổi 10(JS)(DOM) - 1" />
+    <MESSAGE value="Buổi 11(JS)(DOM_2) - 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buổi 11(JS)(DOM_2) - 1" />
   </component>
 </project>

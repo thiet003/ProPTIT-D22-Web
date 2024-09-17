@@ -12,24 +12,28 @@
         }
     </style>
     <!-- 1. Dom Event -->
-    <h1 class="h1_1" onload="bt_onLoad()">DOM EVENTS</h1>    
+    <h1 class="h1_1">DOM EVENTS</h1>    
     <input type="text" class="input_1">
     <button class="button_1">ClickMe</button>
 
 
     <!-- Để test cái StopPropagation -->
-    <!-- <div class="box_2" onclick="console.log('DIV')">
-        <button class="button2" onclick="console.log('The H1')">
-            Test Bubble Event, StopPropagation
-        </button>
-    </div> -->
+    <div class="Ong">
+        <div class="Cha">
+            <button class="Con">
+                Demo Captruing(Ngược với Bubble)
+            </button>
+        </div>
+    </div>
+
+
     <div class="box_2">
         <button class="button2">
             Test Bubble Event, StopPropagation
         </button>
     </div>
 
-    <h1 class="h1_3" >DOM EVENT LISTENER</h1>    
+    <h1 class="h1_3">DOM EVENT LISTENER</h1>    
     <button class="button3">
         Test addEventListener
     </button>
@@ -38,14 +42,16 @@
     <a id="a_ELM" href="https://w3schools.com/">Go to W3Schools.com</a>
 
     <script>
+
+
         let button1 = document.querySelector('.button_1')
         let h1_1 = document.querySelector('.h1_1')
         let input_1 = document.querySelector('.input_1')
 
         
-        h1_1.onload = function(){
-          //  alert("Hello World")
-        };
+        // h1_1.onload = function(){
+        //     console.log("sddsads");
+        // };
 
 
         let foCus = 1;
@@ -62,10 +68,17 @@
         button1.onclick = function(){
             console.log("click => output: " ,input_1.value)
         }
-
-        input_1.onchange = function(){
-            console.log("changed: ", input_1.value)
+        
+        input_1.onkeyup = function(){
+            console.log("up");
         }
+        input_1.onkeydown = function(){
+            console.log("down");
+        }
+
+        // input_1.onchange = function(){
+        //     console.log("changed: ", input_1.value)
+        // }
 
         // input_1.oninput = function(){
         //     console.log("changed auto: ", input_1.value)
@@ -107,6 +120,20 @@
             e.stopPropagation();
             console.log('Butotn H1');
         }
+
+
+
+        document.querySelector('.Ong').addEventListener('click', function(){
+            alert("Ong")
+        }, true)
+        document.querySelector('.Cha').addEventListener('click', function(){
+            alert("Cha")
+        }, true) 
+        document.querySelector('.Con').addEventListener('click', function(){
+            alert("Con")
+        }, true) 
+        
+        
     </script>
 </body>
 </html>
