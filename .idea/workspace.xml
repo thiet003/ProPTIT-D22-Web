@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc8ed95-de8a-4c75-b075-131c99616a24" name="Changes" comment="Buổi 12(JS)(JS Async) - 1">
+    <list default="true" id="9fc8ed95-de8a-4c75-b075-131c99616a24" name="Changes" comment="Buổi 13(JS)(API) - 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,16 +22,20 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2ixQ3hccwLR5dK4TE24vgaFojFv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;TranXuanSonn&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/A.Documents/Code/CodePtit&quot;
   }
@@ -125,10 +129,19 @@
       <option name="project" value="LOCAL" />
       <updated>1726570773365</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Buổi 13(JS)(API) - 1">
+      <option name="closed" value="true" />
+      <created>1726909692907</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1726909692908</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Buổi 1(JS) - 1" />
     <MESSAGE value="Buổi 1(JS) - 2" />
     <MESSAGE value="Buổi 1(JS) - 3" />
@@ -137,6 +150,7 @@
     <MESSAGE value="Buổi 10(JS)(DOM) - 1" />
     <MESSAGE value="Buổi 11(JS)(DOM_2) - 1" />
     <MESSAGE value="Buổi 12(JS)(JS Async) - 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Buổi 12(JS)(JS Async) - 1" />
+    <MESSAGE value="Buổi 13(JS)(API) - 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buổi 13(JS)(API) - 1" />
   </component>
 </project>
