@@ -1,0 +1,17 @@
+{
+  "name": "demojsonserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch database.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "json": "^11.0.0",
+    "json-server": "^1.0.0-beta.2",
+    "server": "^1.0.39"
+  }
+}
