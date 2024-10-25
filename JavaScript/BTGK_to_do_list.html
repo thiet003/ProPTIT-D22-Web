@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="BTGK_to_do_list.css">
+</head>
+
+<body >
+    <div style="display: flex; justify-content: center; ">
+        <div id="form" style="color: black;max-height: 300px;  ">
+            <form id="taskInput" novalidate>
+                <div style="display: flex;">
+                    <input id="title" type="text" placeholder="Tiêu đề" required
+                        style="font-weight: 900; left: -10px; font-size: larger; ">
+                    <input type="checkbox" id="completed" style="display: none;" value="false">
+                </div>
+
+                <textarea id="description" placeholder="Mô tả" style="width: 80%; border: none; "></textarea>
+
+                <div style="display: flex; flex-wrap: wrap;">
+
+                    <input type="date" id="deadline">
+                    <select id="priorityForDeadline" style="display: none; color: black;" disabled>
+                        <option value="Thoải mái" id="o1">Thoải mái</option>
+                        <option value="Hơi gấp" id="o2">Hơi gấp</option>
+                        <option value="Gấp" id="o3">Gấp</option>
+                        <option value="overTime" id="o4">Quá hạn</option>
+                    </select>
+                    <select id="priority" style="color: black;">
+                        <option value="Độ ưu tiên" style="display: none;">Độ ưu tiên</option>
+                        <option value="Thấp">Thấp</option>
+                        <option value="Trung bình">Trung bình</option>
+                        <option value="Cao">Cao</option>
+                    </select>
+                    <select id="typeWork">
+                        <option value="Thể loại" style="display: none;">Thể loại</option>
+                        <option value="Học tập">Học tập</option>
+                        <option value="Bạn bè">Bạn bè</option>
+                        <option value="Gia đình">Gia đình</option>
+                        <option value="addTypeWork">Thêm...</option>
+                    </select>
+
+                    <input type="submit" value="Lưu" id="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h2>Đây là Modal</h2>
+            <p>Nội dung của modal nằm ở đây.</p>
+            <input type="text" placeholder="nhập..." style="display: none;">
+            <button id="cancel">Hủy</button>
+            <button id="ok" style="left: 400px;">Ok</button>
+        </div>
+    </div>
+    <div class="sidebar" style="" >
+        <p class="addIcon"><i style="font-weight: 400;" class="fa-solid fa-plus"></i>tạo</p>
+        <label for="pickTypeWork">Hiển thị:</label>
+        <select id="pickTypeWork">
+            <option value="Tất cả">Tất cả</option>
+            <option value="Học tập">Học tập</option>
+            <option value="Bạn bè">Bạn bè</option>
+            <option value="Gia đình">Gia đình</option>
+        </select>
+        <label for="pickSort">Sắp xếp:</label>
+        <select id="pickSort">
+            <option value="Ưu tiên">Mức Ưu tiên</option>
+            <option value="A -> Z">A -> Z</option>
+            <option value="Z -> A">Z -> A</option>
+        </select>
+        <div>
+            <input type="checkbox" id="todo">
+            <input type="checkbox" id="dang">
+            <input type="checkbox" id="xong">
+        </div>
+
+    </div>
+    <div class="body" style="display: flex; width: 100%;">
+        <div style="width: 17%;">
+
+        </div>
+
+        <div style="display: flex; flex-grow: 1;">
+            <div class="container" style="width: 100%;">
+                <h2>Công việc</h2>
+                <div id="listTask">
+
+                </div>
+            </div>
+            <div class="container" style="width: 100%;">
+                <h2>Hoàn Thành</h2>
+                <div id="listCompleted">
+
+                </div>
+            </div>
+
+            <div class="container" style="width: 100%; ">
+                <h2>Quá hạn</h2>
+                <div id="listOverdue">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src=" BTGK_to_do_list.js">
+    </script>
+</body>
+
+</html>

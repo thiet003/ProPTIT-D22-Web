@@ -1,0 +1,43 @@
+@media (max-width: 989px) {
+    .imgheader1, .dangki, .gocnho, .icondown, .imgquangcao, .thongbaoo, .ngonngu, .sidebar, .logo1, .taikhoanp, .giohangp, .icontimkiem, .danhmucsanpham{
+        display: none !important;
+    }
+    .header{
+        background-color: #C92127;
+    }
+    .imgheader2{
+        display: block;
+        height: 30px;
+        width: auto;
+        top: 15px;
+    }
+    .toolbar{
+        background-color: #C92127;
+        color: white !important;
+    }
+    .iconcuahang{
+        color: white;
+    }
+    .inputtext{
+        width: calc(100%-50px) !important;
+        max-width: 100% !important;
+    }
+    .gtsp{
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr) !important;
+        grid-template-rows: repeat(2, 125px) !important;
+        height: 250px !important; 
+        justify-content: center !important;
+        align-content: center;
+        
+    }
+    .gtsp div{
+        align-self: center;
+    }
+    .goctrai{
+        width: 100%;
+    }
+    .foot{
+        flex-direction: column;
+    }
+}

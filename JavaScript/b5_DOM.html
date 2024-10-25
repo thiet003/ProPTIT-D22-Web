@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="https://example.com" id="myLink">Click me</a>
+
+    <script>
+        document.getElementById("myLink").addEventListener("click", function (event) {
+            console.log("Link was clicked");
+            event.preventDefault();
+            return true; 
+            console.log("Link was clicked");// Ngăn chặn hành vi mặc định và lan truyền sự kiện
+        });
+
+        document.body.addEventListener("click", function () {
+            console.log("Body was clicked");
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

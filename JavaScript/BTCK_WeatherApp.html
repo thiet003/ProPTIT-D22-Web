@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="BTCK.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link  rel="icon" href="https://is5-ssl.mzstatic.com/image/thumb/Purple71/v4/1a/30/c4/1a30c461-520e-0983-3a3e-af096574d87a/source/512x512bb.jpg" type="image/jpg">
+
+</head>
+
+<body style="background-color: #64a0b4; "> <!--   style="background-color: #64a0b4; " -->
+    <div class="form" style=" display: flex;">
+        <div style="display: flex; width: 500px; border-radius: 20px;  background-color: white;">
+            <input type="text" placeholder="Thành phố"
+                style="padding: 0; margin: 0; border: none; outline: none; flex: 1; left: 10px;">
+            <div id="sent" style="display: flex;justify-content: center; align-items: center;padding: 0; margin: 0;"> <i
+                    style="padding: 0; margin: 0;" class="fa-solid fa-magnifying-glass"></i></div>
+
+        </div>
+
+    </div>
+
+    <div class="current" style="display: flex;  margin-right: 100px;">
+        <div class="detail" style="display: flex; width: 80%;">
+            <img src="" alt="Icon thời tiết" width="auto" height="100%">
+            <div style="display: flex; flex-direction: column;justify-content: center;">
+                <h1 id="temperature" style="font-size:80px; text-align: center;"></h1>
+                <p id="temperatureFeel" style="text-align: center;">Nhiệt độ cảm nhận</p>
+            </div>
+
+            <div>
+                <p id="popCurrent">Phần trăm mưa</p>
+                <p id="cloudCoverCurrent">Độ mây che</p>
+                <p id="humidityCurrent">Độ ẩm:</p>
+                <p id="speedWindCurrent">Tốc độ gió</p>
+                <p id="desciptionDetailCurrent">Mô tả</p>
+            </div>
+        </div>
+        <div class="generalCurrent" style="width: 20%; display: flex; flex-direction: column; align-items: end; ">
+            <h2>Thời tiết</h2>
+            <p id="timeCurrent">giờ, ngày</p>
+            <!-- <p id="tempMaxMinCurrent">max min</p> -->
+            <p id="sunrise">mặt trời mọc</p>
+            <p id="sundown">mt lặn</p>
+
+        </div>
+    </div>
+    <div class="menu" style="display: flex; margin: 0; padding: 0;">
+        <button id="forecast5Day" style="background-color: #64a0b4;  border: none; font-weight: bold; ">Dự báo 5
+            ngày</button>
+        <button id="chart" style="border: none; background-color: #64a0b4;  ">Biểu đồ</button>
+    </div>
+    <div class="chart" style="display: none;">
+
+        <div id="titleChart" style="display: none;margin: 0;  ">
+            <button id="tempChart" style="border: none; background-color: #64a0b4; font-weight: bold; margin: 0; margin-left: 5px;margin-right: 5px;">Nhiệt
+                độ</button>
+            <button id="rainChart" style="border: none; background-color: #64a0b4;  margin: 0; margin-right: 5px;margin-left: 5px;">Lượng mưa</button>
+            <button id="windChart" style="border: none; background-color: #64a0b4;  margin: 0;margin-left: 5px;">Gió </button>
+        </div>
+
+        <div class="temperatureChart" style="height: 290px;display: flex; justify-content: center; ">
+            <canvas id="temperatureChart"  ></canvas>
+        </div>
+
+        <div class="rainChart" style="width: 70%; display: none;">
+            mưa
+            <canvas id="tempetur" width="795px" height="auto"></canvas>
+        </div>
+
+        <div class="windChart" style="width: 70%; display: none;">
+            gió
+            <canvas id="tempe" width="795px" height="auto"></canvas>
+        </div>
+
+    </div>
+
+    <div class="general" >
+        <div class="generalDay"
+            style="display: none;  flex: 1; background-color: rgb(218, 229, 225, 0.1); border-radius: 15px;">
+            <h3 id="generalDay" style="text-align: center;">Thứ 2</h3>
+            <div style="display: flex;justify-content: center ;left: -20px; bottom: -20px;" >
+                <img src="" width="100%" height="auto"
+                    alt="icon thời tiết" id="iconGeneralDay" ></div>
+            <p style="text-align: center;" id="tempMinMax">min-max</p>
+        </div>
+        <div class="generalContainer" style=" display: flex; justify-content: space-around; gap: 80px; ">
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="BTCK.js"></script>
+    
+
+</body>
+
+</html>

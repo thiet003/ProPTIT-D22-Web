@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    background-clip: border-box;
+    position: relative;
+    overflow: visible;
+    font-family: nunito-sans, sans-serif;
+    
+    
+}
+
+.header{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: #E52323;
+}
+.imgheader2{
+    display: none;
+}
+.toolbar{
+    height: 65px;
+    width: 1230px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around ;  
+    align-items: center; 
+}
+.thanhcuahang{
+    display: none;
+    width: 1250px;
+    height: 550px;
+    position: absolute;
+    border-top: 0.5px solid rgb(226, 218, 218);
+    border-radius: 6px;
+    background-color:white;
+    overflow:auto;
+    left: -250px;
+    top: 40px;
+}
+.cuahang:hover .thanhcuahang{
+    display:block;
+}
+
+.thanhtimkiem{
+    display: none;
+    width: 550px;
+    height: 350px;
+    position: absolute;
+    border-radius: 6px;
+    background-color: white;
+    overflow: visible;
+    color: black;
+    top: 20px;
+    margin: 5px;
+}
+.timkiem:hover .thanhtimkiem{
+    display:block;
+}
+.thanhthongbao{
+    display: none;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    border-radius: 6px;
+    background-color: white;
+    overflow: visible;
+    left: -150px;
+
+}
+.thongbao:hover .thanhthongbao{
+    display:block;
+}
+.toolbaritem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.thanhtaikhoan{
+    display: none;
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    border-radius: 6px;
+    background-color: white;
+    overflow: visible;
+    left: -150px;
+    top: 20px;
+}
+.taikhoan:hover .thanhtaikhoan{
+    display:block;
+}
+
+.imgsp{
+    height: 50px;
+    width: 50px;
+}
+
+.thanhtile{
+
+    display: flex; justify-content: center;
+}
+.tile1{
+    width: 150px; height: 15px; background-color: rgb(230, 0, 0);  opacity: 0.6; border-radius: 7px;
+}
+.tile2{
+    position: relative; width: 90px; height: 15px; background-color: rgb(226, 0, 0); top: -15px;  border-top-left-radius: 7px; border-bottom-left-radius: 7px ;
+}
+.tile3{
+    position: relative;
+    top: -8px;
+    font-size:x-small;
+}
+.tile4{
+    width: 100% !important;
+}
+
+.thanhsidebar{
+    display: none;
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    border-radius: 6px;
+    background-color:white;
+    overflow: visible;
+    color:black;
+    right: 0;
+    top: 0; 
+    position: fixed;
+
+}
+.sidebar{
+    position: fixed;
+    color: white;
+    z-index: 8;
+    top: 300px;
+    right: 5px;
+    border-radius: 5px;
+}
+.sidebar:hover .thanhsidebar{
+    display:block;
+}
+.hoo{
+    font-weight: 700;
+    font-size: large;
+    padding: 10px;
+}
+.hoo:hover{
+    background-color: #F2F4F5 !important;
+}
+.xemtat{
+    color: #0c74e2 !important;
+}
+.itemsachtrongnuoc li{
+    color: #7A7E7F;
+    
+}
+.fa-heart{
+    color: red;
+}
+.giamgia{
+    padding: 8px;
+    color: white;
+    background-color: #C92127 !important;
+    border-radius: 4px;
+}
+.giaBan{
+    color: #C92127;
+}
+
+.giaTruoc{
+    color: #888888;
+    text-decoration: line-through;
+}
+.môtả{
+    color: #B59080;
+    top: -12px;
+    font-size: small;
+}
+.điểm{
+    color: #2F80F0;
+    font-size: small;
+    top: -25px;
+}
