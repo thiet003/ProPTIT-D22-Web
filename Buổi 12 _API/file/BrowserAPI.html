@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Geolocation</h2>
+
+  <p>Click the button to get your coordinates.</p>
+
+  <button onclick="getLocation()">Try It</button>
+
+  <p id="demo"></p>
+
+
+  <p>Demo Canvas:</p>
+  <canvas id="myCanvas" width="300" height="150"></canvas>
+
+  <script>
+    const x = document.getElementById("demo");
+    function getLocation() {
+      try {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } catch {
+        x.innerHTML = err;
+      }
+    }
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;
+    }
+
+    // DemoCanvas:
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");   
+
+
+    // Vẽ một đường tròn
+    ctx.beginPath();
+    ctx.arc(100, 75, 50, 0, Math.PI * 2);
+    ctx.stroke();
+  </script>
+
+</body>
+</html>

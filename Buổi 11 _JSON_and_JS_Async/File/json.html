@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="listSub">
+        1. Test cái thêm các thẻ hiển thị các ARR.<br>
+    
+    </div>
+
+    <script>
+        //1. JSON cos gia tri la Object
+        console.log("1. JSON co gia tri la OBJect")
+        var info = {
+            name: "transon",
+            age: 10,
+            passs: "11111"
+        }
+
+        var info_JSONString = '{"name": "transon", "age":10, "pass": "11111"}'
+        
+        var infor_OBJ = JSON.parse(info_JSONString)
+        console.log("TYPEOF JSONSTRING: " ,typeof(info_JSONString))
+        console.log("TYPEOF: " ,typeof(infor_OBJ))
+        console.log(infor_OBJ.name)
+        console.log(infor_OBJ.age)
+        
+        var obj_JSONString = JSON.stringify(info)
+        console.log("stringify: ", obj_JSONString)
+
+        //2. JSON co gia tri laf NUMBER
+        console.log("2. JSON co gia tri la NUMBER")
+        var num = 5;
+        var numJSON = '5';
+        
+        
+        console.log(JSON.parse(numJSON))
+        console.log(typeof(JSON.parse(numJSON)))
+
+        //3. Bool, NUll tương tự num
+
+        //4. ARR: Lưu ý: Khi lưu JSOn (chuyển về String), nếu ar có obj, thì sẽ chuyển cái obj đó như phần 1/
+        console.log("4. JSON co gia tri la ARR")
+        var arr1 = [
+            'css',
+            'js',
+            'c#',
+            'py'
+        ]
+
+        var arr2 = [
+            {
+                mon: 'C++',
+                ngay:'18/3'
+            },
+            {
+                mon: 'C+',
+                ngay:'18/3'
+            },
+            {
+                mon: 'C',
+                ngay:'18/3'
+            }
+        ]
+
+        var arr2_JSONString = `
+            [
+                {
+                    "mon": "C++",
+                    "ngay": "18/3"
+                },
+                {
+                    "mon": "C+",
+                    "ngay":"18/3"
+                },
+                {
+                    "mon": "C",
+                    "ngay": "18/3"
+                }
+            ]
+        `;
+
+        var arr2_JSON = JSON.parse(arr2_JSONString);
+        console.log(typeof(arr2_JSON))
+        console.log(arr2_JSON)
+
+
+        
+
+        var listSubject_toElement = "";
+
+        arr2_JSON.forEach(element => {
+            listSubject_toElement += `
+                <div class = "item">
+                    <div class = "inner-mon"> ${element.mon} </div> 
+                    <div class = "inner-ngay"> ${element.ngay} </div>
+                </div>
+            `;
+        });
+        console.log(listSubject_toElement)
+
+        var listSubject = document.querySelector(".listSub")
+        console.log(listSubject)
+        listSubject.innerHTML = listSubject_toElement;
+
+
+
+    </script>
+
+</body>
+</html>

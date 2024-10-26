@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02b9d012-564a-4b37-b72f-f744c250e7dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/avatar_g.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/avatar_g2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/download-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/envelope-solid (1).svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/envelope-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/gem-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/image-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/map-pin-solid (1).svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/map-pin-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/mountains.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/person-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/phone-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/windows-brands-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/asset/image/workshop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/demo/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/demo/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/3300000026817.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/392x156_vnpay_thang8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/6975055754175_1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/9784065351710.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/BannerCapypara_0724_Slidebanner_840x320_06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/Iconsinhnhat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/NCCTanViet_KC_0824_Slide_840x320.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/NCCTanViet_KC_0824_SmallBanner_310x210.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/PamperMeT08_392x156.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/TrangsinhnhatT8_0824_LDP_Slidebanner_840x320_1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/b_a-1-tr_n-l_n-m_i-nh_-_-kh_c-2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/b_a-in-g_c-nh_-c_-n_ng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/co-viet-nam (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/doraemon-tieu-thuyet_nobita-va-ban-giao-huong-dia-cau_bia.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/dragon_ball_super_bia_tap_19.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/ico_menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/ico_searchtrending_black.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/ico_star_yellow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/icon_dealhot_new.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/kt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/logo-bo-cong-thuong-da-thong-bao1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/nang-juliet-o-truong-noi-tru_bia_standee_tap-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/nong-gian-la-ban-nang-1_1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/ssss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/tlh1 (1).webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/tlh2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/image/vnpost1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/learn/Tạo Tab bằng CSS, HTML/id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/learn/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/note.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/responsive/ss1(+1020).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTapLon_2 (Fahasa)/responsive/ss1(-1020).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buổi 12 _API/file/demoJsonServer/database.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Buổi 12 _API/file/demoJsonServer/database.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2mnlRpw7KDIrhLDcHzOCH4nNR5O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "TranXuanSonn",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/A.Documents/Code/PROPTIT/FrontEnd-PROPTIT/BTL_GK_JS_TODOLISTT"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02b9d012-564a-4b37-b72f-f744c250e7dd" name="Changes" comment="" />
+      <created>1727720215383</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727720215383</updated>
+    </task>
+    <servers />
+  </component>
+</project>

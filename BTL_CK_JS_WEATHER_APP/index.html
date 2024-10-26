@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js" integrity="sha512-U3hGSfg6tQWADDQL2TUZwdVSVDxUt2HZ6IMEIskuBizSDzoe65K3ZwEybo0JOcEjZWtWY3OJzouhmlGop+/dBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+
+</head>
+<body>
+    <!-- I.Home -->
+    <div class="container">
+        <div class="search-bar">
+            <div class="openMenu"><i class="fa-solid fa-bars"></i></div>
+            
+            <div class="namecity">
+                <div class="search-input">
+                    <input type="text" id="searchInput" placeholder="Ex:Hanoi, London,...">
+                </div>
+                <div class="namecity-bar">
+                    <h2></h2>
+                </div>
+            </div>
+           
+            <div class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="myLocation-button">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            
+        </div>
+        <div class="homeTab">
+            <div class="main-section">
+                <div class="weather-status">
+                    <!-- <dotlottie-player src="https://lottie.host/1b6b3b9a-05ce-4d01-bcbf-ff7a8d09da04/nQhGrBhmN9.json" background="transparent" speed="1" style="width: 300px; height: 100%;" loop autoplay></dotlottie-player>            </div> -->
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png">
+                </div>
+                <div class="weather-detail">
+                    <div class="temperature">
+                        <h1>--<sup>o</sup></h1>
+                    </div>
+                    <div class="others">
+                        <div class="status">
+                            <h2 class="D" style>--:-- ; --/--/-- </h2>
+                            <p>Thunderstorm</p>
+                        </div>
+                        <div class="doam">
+                            <p class="H">Humidity : --<sup>o</sup> |</p>
+                            <p class="L">| Visibility : --m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast-section">
+                <div class="container-forecast">
+                    <div class="today-weather">
+                        <div class="item">
+                            <p class="today">TODAY</p>
+                            <!-- <dotlottie-player src="https://lottie.host/1b6b3b9a-05ce-4d01-bcbf-ff7a8d09da04/nQhGrBhmN9.json" background="transparent" speed="1" style="width: 70%; height: 50%;" ></dotlottie-player> -->
+                            <img src="https://openweathermap.org/img/wn/10d@2x.png">
+                            <p class="percent">--<sup>o</sup> -> --<sup>o</sup></p>
+                            <p class="statuswt">THUNDERSTORM</p>
+                        </div>
+                    </div>
+                    <div class="nextday-weather">
+                        <p class="_10day">3-DAY FORECAST</p>
+                        <div class="nextday-containter">
+                            <div class="nextday-item">
+                                <div class="cnt">
+                                    <!-- <dotlottie-player src="https://lottie.host/1b6b3b9a-05ce-4d01-bcbf-ff7a8d09da04/nQhGrBhmN9.json" background="transparent" speed="1" style="width: 50px; height: 50px;" ></dotlottie-player> -->
+                                    <img src="https://openweathermap.org/img/wn/10d@2x.png">
+                                </div>
+                                <p class="percent">--<sup>o</sup> -> --<sup>o</sup></p>
+                                <p class="statuswt">THUNDERSTORM</p>
+                            </div>
+                            <div class="nextday-item">
+                                <div class="cnt">
+                                    <!-- <dotlottie-player src="https://lottie.host/1b6b3b9a-05ce-4d01-bcbf-ff7a8d09da04/nQhGrBhmN9.json" background="transparent" speed="1" style="width: 50px; height: 50px;" ></dotlottie-player> -->
+                                    <img src="https://openweathermap.org/img/wn/10d@2x.png">
+                                </div>
+                                <p class="percent">--<sup>o</sup> -> --<sup>o</sup></p>
+                                <p class="statuswt">THUNDERSTORM</p>
+                            </div>
+                            <div class="nextday-item">
+                                <div class="cnt">
+                                    <!-- <dotlottie-player src="https://lottie.host/1b6b3b9a-05ce-4d01-bcbf-ff7a8d09da04/nQhGrBhmN9.json" background="transparent" speed="1" style="width: 50px; height: 50px;" ></dotlottie-player> -->
+                                    <img src="https://openweathermap.org/img/wn/10d@2x.png">
+                                </div>
+                                <p class="percent">--<sup>o</sup> -> --<sup>o</sup></p>
+                                <p class="statuswt">THUNDERSTORM</p>
+                            </div>
+                            <div class="nextday-item">
+                                <div class="cnt">
+                                    <!-- <dotlottie-player src="https://lottie.host/1b6b3b9a-05ce-4d01-bcbf-ff7a8d09da04/nQhGrBhmN9.json" background="transparent" speed="1" style="width: 50px; height: 50px;" ></dotlottie-player> -->
+                                    <img src="https://openweathermap.org/img/wn/10d@2x.png">
+                                </div>
+                                <p class="percent">--<sup>o</sup> -> --<sup>o</sup></p>
+                                <p class="statuswt">THUNDERSTORM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="forecast-chart">
+                    <p class="title">12 HOURS FORECAST</p>
+                    <canvas id="lineChart" style="height: 120px; width: 100%; margin-bottom: 10px;"></canvas>
+                </div>    
+            </div>
+            <div class="calendarTab">
+                <div id='calendarContent'></div>
+                <div id="calendar_DayWeather">
+                </div>
+                <div class="findRequest">
+                    <dotlottie-player src="https://lottie.host/09431d52-fb1e-4e80-8d38-1819e2e829be/XLkfV7r6dI.json" background="transparent" speed="1" style="width: 100%; height: 300px;" loop autoplay></dotlottie-player>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- II.SideBar -->
+    <div class="sideBar">
+        <div class="menu">
+            <div class="title">
+                <img src="./asset/img/1728148267380.png">
+                <h1>Weather App</h1>
+            </div>
+            <p class="pMenu">Menu</p>
+            <div class="home item">
+                <i class="fa-solid fa-house"></i>
+                <h2>Home</h2>
+            </div>
+            <div class="calendarBar item">
+                <i class="fa-solid fa-calendar"></i>
+                <h2>Calendar</h2>
+            </div>
+            <div class="openSetting item">
+                <i class="fa-solid fa-gear"></i>
+                <h2>Setting</h2>
+            </div>
+        </div>
+        <div class="stroke"></div>
+    </div>
+    
+    <!-- III. Setting Tab -->
+    <div class="setting">
+        <div class="search-bar">
+            <div class="openMenu"><i class="fa-solid fa-bars"></i></div>
+            
+            <div class="namecity">
+                <div class="search-input">
+                    <h1>Setting</h1>
+                </div>
+            </div>
+           
+        </div>
+        <div class="listSetting">
+            <ul>
+                <li>
+                    <h2>Theme: </h2>
+                    <div class="light"><h3>L</h3></div>
+                    <div class="dark"><h3>D</h3></div>
+                </li>
+                <li><h2>Language: </h2></li>
+                <li>...</li>
+            </ul>
+        </div>
+        
+    </div>
+
+
+    <script src="./asset/script/moment.js"></script>
+    <script type="module" src="./asset/script/main.js"></script>
+</body>
+</html>
