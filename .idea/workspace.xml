@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc8ed95-de8a-4c75-b075-131c99616a24" name="Changes" comment="Buổi 13(JS)(API) - 1">
+    <list default="true" id="9fc8ed95-de8a-4c75-b075-131c99616a24" name="Changes" comment="Buổi 14(Mở đầu React-1)">
+      <change afterPath="$PROJECT_DIR$/Buổi 14_React Mở đầu/File/demoapp/src/components/Login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Buổi 14_React Mở đầu/File/demoapp/src/layout/LayoutDefault/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Buổi 12 _API/file/demoJsonServer/database.json" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 12 _API/file/demoJsonServer/database.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_GK_JS_TODOLIST" beforeDir="false" afterPath="$PROJECT_DIR$/BTL_GK_JS_TODOLIST" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_GK_JS_TODOLIST/asset/script/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/BTL_GK_JS_TODOLIST/asset/script/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_GK_JS_TODOLIST/asset/script/modalControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/BTL_GK_JS_TODOLIST/asset/script/modalControl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_GK_JS_TODOLIST/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/BTL_GK_JS_TODOLIST/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buổi 14_React Mở đầu/File/demoapp/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 14_React Mở đầu/File/demoapp/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buổi 14_React Mở đầu/File/demoapp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 14_React Mở đầu/File/demoapp/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buổi 14_React Mở đầu/Learn/learn.md" beforeDir="false" afterPath="$PROJECT_DIR$/Buổi 14_React Mở đầu/Learn/learn.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +47,7 @@
     "git-widget-placeholder": "TranXuanSonn",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/A.Documents/Code/CodePtit/Java_K1N3"
+    "last_opened_file_path": "D:/A.Documents/Code/FE"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -146,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726924457585</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Buổi 14(Mở đầu React-1)">
+      <option name="closed" value="true" />
+      <created>1729932778294</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729932778294</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -160,6 +177,7 @@
     <MESSAGE value="Buổi 11(JS)(DOM_2) - 1" />
     <MESSAGE value="Buổi 12(JS)(JS Async) - 1" />
     <MESSAGE value="Buổi 13(JS)(API) - 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Buổi 13(JS)(API) - 1" />
+    <MESSAGE value="Buổi 14(Mở đầu React-1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buổi 14(Mở đầu React-1)" />
   </component>
 </project>

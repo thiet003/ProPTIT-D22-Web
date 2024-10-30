@@ -39,7 +39,16 @@
    2. Thực thi các gói chưa được cài đặt trước đó
    3. VD: Thực thi lệnh tạo react-app: npx create-react-app tenduan. vì nó đã đc cài rồi nên cứ thực thi thôi
    
-
+# I2: TP trong React-App:
+1. public:
+   1. index.html sẽ đc render lên web
+   2. Tại sao lại để img, icon trong đó: Vì nó đc truy cập trực tiếp khi trình duyệt gọi vào => Đỡ rối phần mềm code
+   3. icon: nên đưa về dạng .ico
+2. package.json: Lưu cái thông tin của thư viện hoặc tên liên quan web, tên package sẽ dùng.
+   1. npm quản lý thư viện, nó dùng file package.json để quản lý các thư viện (tạo  = npm init)
+3. pâckage.lock: Lưu các thông tin cấu trúc của cá tk dependency trong package.json. Được cập nhật khi npm install
+4. index: 
+   1. root: tk Browser sẽ tìm đến tk root đầu tiên để chạy. VirtualDom nó sẽ
 # II. ReactJS là gì?:
 ## 1. ĐN:
 
@@ -93,6 +102,9 @@
    4. Hiệu suất cao: nhờ sử dụng ES Modules gốc của trình duyệt và tính năng Hot Module Replacement (HMR), Vite mang đến trải nghiệm phát triển mượt mà, với phản hồi tức thì khi bạn thay đổi mã.
 4. SO sánh:
    1. ![alt text](image-5.png)
+5. Yếu:
+   1. Cộng đồng nhỏ,
+   2. Khó có thể đi sâu hẳn, phức tạp
 
 
 #### 3. Cài đặt:
@@ -163,7 +175,10 @@
   - Class component được định nghĩa thông qua một class của JavaScript. 
   - Đối với class component, ta sử dụng class để định nghĩa component, và component này phải kế thừa từ class React.Component. 
   - Class components thường được sử dụng khi cần theo dõi trạng thái (state) của component và **sử dụng các lifecycle methods** để quản lý vòng đời của component.
-2. VD:
+2. Trước React 16.8, các thành phần Class là cách duy nhất để theo dõi trạng thái và vòng đời trên một thành phần React. Các thành phần chức năng được coi là "không có trạng thái".
+- Với việc bổ sung Hooks, các thành phần Function giờ đây gần như tương đương với các thành phần Class. Sự khác biệt nhỏ đến mức bạn có thể sẽ không bao giờ cần sử dụng một thành phần Class trong React.
+- Mặc dù các thành phần Function được ưa thích, nhưng hiện tại không có kế hoạch loại bỏ các thành phần Class khỏi React.
+3. VD:
    - ```js
          // Class component
       class Counter extends React.Component { //Là một class component kế thừa từ React.Component.
@@ -228,5 +243,7 @@
    3. Khi 1 Components cha truyền cho Components con 1 Props thì Components con chỉ có thể độc và không có quyền chỉnh sửa nó bên cha
    4. Cách truyền: Như truyền tham số
    5. Kiểu dữ liệu: Tất cả
-2. VD: 2 Tk content nó dùng chung 1 index.js (cùng HTML). => CÙng CSS. nhưng ta muốn nó có content bên trong khác nhau thì sao? => dùng prop truyền data từ component cha xuống component con.
+   6. VD: 2 Tk content nó dùng chung 1 index.js (cùng HTML). => CÙng CSS. nhưng ta muốn nó có content bên trong khác nhau thì sao? => dùng prop truyền data từ component cha xuống component con.
 - Sửa thì cứ lấy text ta truyền trong prop lưu vô
+2. Children: Là con của 1 cái thẻ, sẽ đc truyền vào khi gọi tk con , bao gồm content bên trong
+   1. VD: return `(<A>Content</A>)` => props.children sẽ là cái Content
