@@ -1,0 +1,16 @@
+p{
+    margin: 0;    
+    
+}
+.city{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.temp{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.description{
+    font-size: 16px;
+}

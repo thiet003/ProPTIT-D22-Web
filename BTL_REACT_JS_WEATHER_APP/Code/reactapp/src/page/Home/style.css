@@ -1,0 +1,33 @@
+.home {
+    min-height: 100vh;
+    display: flex;
+    /* Thay đổi tỷ lệ grid để forecast chiếm 40% */
+    background-color: #1a237e;
+    color: white;
+}
+
+.ss1 {
+    width: 70%;
+    padding: 30px;
+    background-color: #EDF0F8;
+}
+
+.current {
+    height: 20%;
+    background-color: #0E277B;
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+    min-height: 200px;
+}
+
+/* Container cho 2 biểu đồ */
+.chartWeas {
+    height: 50%;
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 10px 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+

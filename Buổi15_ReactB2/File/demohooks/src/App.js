@@ -1,11 +1,16 @@
 import './App.css';
 import Products from './components/Products';
+import SideBar from './components/SideBar';
+import Garage from './components/Garage';
 
 function App() {
+
   return (
-    <>
-      <Products/>
-    </>
+    <div className='container-sidebar'>
+      {/* <SideBar/> */}
+            {/* <Products/> */}
+      <Garage/>
+    </div>
   );
 }
 

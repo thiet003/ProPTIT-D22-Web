@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #1a237e;
+    color: white;
+}
+
+.header h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.header form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header input {
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: transparent;
+    color: white;
+    font-size: 0.9rem;
+    min-width: 200px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.header input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header input:focus {
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.header button {
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: transparent;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header button:hover {
+    border-color: rgba(255, 255, 255, 0.8);
+}

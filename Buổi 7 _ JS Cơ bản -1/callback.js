@@ -50,38 +50,38 @@
 
 //IV. PROMISSE
 // 1. VD 1: Promisse
-// var a = 10;
-// var promise1 = new Promise((resolve, reject) => {
+var a = 10;
+var promise1 = new Promise((resolve, reject) => {
     
-//     if(a != undefined){
-//         resolve("A: " + a); //success
-//     }
-//     else {
-//         reject("A la Null")
-//     }
-// })
+    if(a != undefined){
+        resolve("A: " + a); //success
+    }
+    else {
+        reject("A la Null")
+    }
+})
 
-// promise1
-//     .then((success) => {
-//         console.log(success)
-//         return success
-//     })  // (đối số1, đối số 2,..) => {//code  (Hàm Arrow)}
-//     .then((success2) => {
-//         console.log(success2 + 1)
-//         return success2 + 1
-//     }) 
-//     .then((success3) => {
-//         console.log(success3 + 1)
-//         return success3 + 1
-//     }) 
+promise1
+    .then((success) => {
+        console.log(success)
+        return success
+    })  // (đối số1, đối số 2,..) => {//code  (Hàm Arrow)}
+    .then((success2) => {
+        console.log(success2 + 1)
+        return success2 + 1
+    }) 
+    .then((success3) => {
+        console.log(success3 + 1)
+        return success3 + 1
+    }) 
 
 
-//     .catch((error) => {
-//         console.log(error)
-//     })
-//     .finally(() => {
-//         console.log("Luc nao cung vao day")
-//     })
+    .catch((error) => {
+        console.log(error)
+    })
+    .finally(() => {
+        console.log("Luc nao cung vao day")
+    })
 
 
 
